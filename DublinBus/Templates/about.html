@@ -1,0 +1,135 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dublin Bus</title>
+
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'Style.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'style_2.css' %}">
+
+</head>
+
+<body>
+
+    <nav class=" navbar navbar-expand-md navbar-dark fixed-top py-3" id="main-nav">
+        <div class="container">
+            <a href="/" class="navbar-brand">
+                <h1 class="d-inline align-middle display-5">Travel Hub</h1>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/about/" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/transport_details/" class="nav-link">Transport Details</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="about_banner" class=" text-center p-5 rounded mb-4 text-primary bg-success">
+        <h1 class="display-3 fw-bold">WELCOME TO THE TRAVEL HUB</h1>
+        <h2 class="display-6">The all-in-one bus travel directions and tourist information platform.</h2>
+    </div>
+
+    <div class="container py-md-3 text-center">
+
+        <h3 class="fw-bold">Here we will go through how to use each feature of our application. </h3>
+
+        <h4>Move the start (green) and end markers (red) to get a bus route instantly</h4>
+        <div id="centred_image">
+            <img src="/static/Images/Picture6.png" alt="map" class="img-fluid">
+        </div>
+
+        <h4>After a journey is routed, the two closest Dublin bikes stations are displayed, displaying the station's
+            name, total stands, available bikes and parking slots.</h4>
+        <div id="centred_image">
+            <img src="/static/Images/bikes.png" alt="bike info window on map" class="img-fluid">
+        </div>
+
+        <h4>Use the search location bar to input start and end locations manually.</h4>
+        <div id="centred_image">
+            <img src="/static/Images/search.png" alt="search bar" class="img-fluid">
+        </div>
+
+        <h4>Searching is restricted to the Dublin area!</h4>
+        <div id="centred_image">
+            <img src="/static/Images/restricted_search.png" alt="search restriction bar" class="img-fluid">
+        </div>
+
+        <h4>Be sure to pick your routing preference! </h4>
+        <div id="centred_image">
+            <img src="/static/Images/location.png" alt="location on map" class="img-fluid">
+        </div>
+
+        <h4>To see a step-by-step breakdown of the directions and more information about the journey ahead, hit the see
+            full details button.</h4>
+        <div id="centred_image">
+            <img src="/static/Images/full_details.png" alt="details button" class="img-fluid">
+        </div>
+        <h5>We can then see the details of the route ahead, which shows total travel distance, estimated travel time
+            and
+            how much the fare is going to cost in both cash and leap cards.</h5>
+        <h5>The estimated travel time is calculated using our support vector machine, machine learning models.</h5>
+
+        <h4>Below this, we display whether or not there is going to be a delay using secondary classification
+            machine
+            learning models.</h4>
+        <div id="centred_image">
+            <img src="/static/Images/traffic.png" alt="details pop up" class="img-fluid">
+        </div>
+
+        <h4>Then you can view the directions tab, which displays step by step directions of the route ahead!</h4>
+        <div id="centred_image">
+            <img src="/static/Images/directions.png" alt="directions" class="img-fluid">
+        </div>
+
+        <h4>Explore our range of tourist attractions below. When a group or category is chosen, markers will appear
+            on
+            the map above their location.</h4>
+        <div id="centred_image">
+            <img src="/static/Images/tourist.png" alt="tourist attractions" class="img-fluid">
+        </div>
+
+        <h4>Click on any marker to see a picture, rating website link and also directly get directions!</h4>
+        <div id="centred_image">
+            <img src="/static/Images/infowindow.png" alt="attraction popup" class="img-fluid">
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+</body>

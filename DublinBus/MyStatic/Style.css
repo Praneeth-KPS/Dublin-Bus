@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+html, body {
+    background-color: #7c947d7e;
+    padding-top: 55px;
+    padding-bottom: 15px;
+}
+
+h3, h4 {
+    margin-top: 2rem;
+}
+
+.display-5 {
+    font-weight: 700;
+}
+
+.GoogleMap{
+    height: 650px;
+    width: 100%;
+}
+
+.accordion-button {    
+    padding: 0.5rem;
+}
+
+.AllInfoDiv{
+    z-index: 999999;
+}
+
+.panel-heading {    
+    padding: 0px;
+}
+
+.modal-dialog {
+    top: calc(100% - 300px);
+}
+
+.CurrMarker{
+    margin: 10px;
+    border: white;
+}
+
+.CurrMarker hover{
+    cursor: pointer;
+}
+
+.ImgCurr{
+    height: 40px;
+    width: 40px;
+}
+
+#Night-mode{
+    display: flex;
+    align-items: center;
+}
+
+#Night-mode .toggle{
+    position: relative;
+    display: inline-block;
+    width: 75px;
+    height: 26px;
+    margin: 0 10px;
+}
+
+#Night-mode .slider:before{
+    content: "";
+    height: 16px;
+    width: 37px;
+    left: 5px;
+    bottom: 5px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50px;
+}
+
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.switch input {display:none}
+
+.slider:before
+{
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 20px;
+    left: 5px;
+    bottom: 5px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50px;
+}
+
+input:checked + .slider
+{
+    background-color: #124b5c;
+}
+
+input:checked + .slider:before
+{
+    transform: translateX(20px);
+}
+
+  /* ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  } */
+
+ol li, ol p {
+    padding-left: 2rem;
+    margin-bottom: 0;
+}
+
+ol li {
+    margin-top: 1.5rem;
+}
+
+.card-header {
+    font-size: 1.5em;
+}
+
+#transport_row {
+    align-items: flex-start;
+}
+
+#title_line {
+    margin-bottom: 0;
+    margin-top: 1.5rem;
+    font-weight: bold;
+}
+
+#centred_image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* #leapfare {
+    margin-bottom: 0;
+} */
+
+.display-6 {
+    font-size: 1.8em;
+}

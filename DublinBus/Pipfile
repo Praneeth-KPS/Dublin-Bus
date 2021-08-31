@@ -1,0 +1,35 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+pyodbc = "*"
+asgiref = "*"
+beautifulsoup4 = "*"
+bs4 = "*"
+certifi = "*"
+charset-normalizer = "*"
+dj-database-url = "*"
+django-heroku = "*"
+gunicorn = "*"
+idna = "*"
+joblib = "*"
+numpy = "*"
+psycopg2 = "*"
+pytz = "*"
+requests = "*"
+scikit-learn = "*"
+scipy = "*"
+sklearn = "*"
+soupsieve = "*"
+sqlparse = "*"
+threadpoolctl = "*"
+urllib3 = "*"
+whitenoise = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"

@@ -1,0 +1,1898 @@
+{
+    "results": [
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 53.3437935,
+                    "lng": -6.2545716
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 53.3454615302915,
+                        "lng": -6.2521107
+                    },
+                    "southwest": {
+                        "lat": 53.3427635697085,
+                        "lng": -6.261954299999999
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png",
+            "name": "Trinity College Dublin",
+            "photos": [
+                {
+                    "height": 720,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/116038643500618987525\"\u003ejulis chung\u003c/a\u003e"
+                    ],
+                    "photo_reference": "Aap_uEBA-KE4jI2i_Tg7tUk9jDcWMOU7twmUDPYWdG1C0uMWz3JlQ8oV4gWwqbIz-f80KfGnQaOS6msBEb-FmWpHocwSnVDcj5eoWayRpu_o6secTl_JTsx57-BrIF_f3-6uN2TpjJLFvFtTggamXLKlGSkrVu2426MPmK7dCKGw8SX1aQpd",
+                    "width": 1080
+                }
+            ],
+            "place_id": "ChIJ3Y7HLZsOZ0gRZ2FxjA3-ACc",
+            "plus_code": {
+                "compound_code": "8PVW+G5 Dublin, County Dublin, Ireland",
+                "global_code": "9C5M8PVW+G5"
+            },
+            "rating": 4.5,
+            "reference": "ChIJ3Y7HLZsOZ0gRZ2FxjA3-ACc",
+            "scope": "GOOGLE",
+            "types": [
+                "university",
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 1978,
+            "vicinity": "College Green, Dublin 2"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 53.34288609999999,
+                    "lng": -6.267428399999999
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 53.34456355,
+                        "lng": -6.264983299999999
+                    },
+                    "southwest": {
+                        "lat": 53.34176575,
+                        "lng": -6.269563300000001
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "name": "Dublin Castle",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 2268,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/101469947283674852213\"\u003eVladimíra Nykrýnová\u003c/a\u003e"
+                    ],
+                    "photo_reference": "Aap_uEAc-Kx5aE4tUZHgnQPg40Te_heUPQWbpTLJoGKtAn43Jksi1UW6Tbgq2_svHvq-HyGiIK2OW1KJ5va0mTBP66KisCQtZ8EbjUbltkHu4XDcnozmpXOZeQRUhNIG0TmqqM1GcMqMV87RPj1qbJLnisda8yUcT3NRG1gF2Nn5GebiDR42",
+                    "width": 4032
+                }
+            ],
+            "place_id": "ChIJif9mNYcOZ0gRhlbhwPbNDwU",
+            "plus_code": {
+                "compound_code": "8PVM+52 Dublin 2, Ireland",
+                "global_code": "9C5M8PVM+52"
+            },
+            "rating": 4.2,
+            "reference": "ChIJif9mNYcOZ0gRhlbhwPbNDwU",
+            "scope": "GOOGLE",
+            "types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 20784,
+            "vicinity": "Dame Street, Dublin 2"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 53.348704,
+                    "lng": -6.2531385
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 53.3504146802915,
+                        "lng": -6.251351949999999
+                    },
+                    "southwest": {
+                        "lat": 53.3477167197085,
+                        "lng": -6.254168150000001
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/civic_building-71.png",
+            "name": "The Custom House",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 2000,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/105555895672045703140\"\u003eAnatolij Chomko\u003c/a\u003e"
+                    ],
+                    "photo_reference": "Aap_uEA45vLJsmw5_cfRrFFF7kfcUjvZ5NdmaW2cJR9VjVb3Zwozws_qS-QmUjNF-JpVdrugpwOHjkrNQ4KirbKMf2eIZzByiRWIvVYcJYyHnNJYX4FoISUxCZDCy9BDbEHHgLLW5M7VloiiMiG-hfGZIrfmU-cnJRffeRsWb6D0GJFPndam",
+                    "width": 2905
+                }
+            ],
+            "place_id": "ChIJafF_n48OZ0gRWn774aXcXdw",
+            "plus_code": {
+                "compound_code": "8PXW+FP Dublin 1, Ireland",
+                "global_code": "9C5M8PXW+FP"
+            },
+            "rating": 4.4,
+            "reference": "ChIJafF_n48OZ0gRWn774aXcXdw",
+            "scope": "GOOGLE",
+            "types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 148,
+            "vicinity": "Dublin 1"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 53.34351299999999,
+                    "lng": -6.271060199999999
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 53.3446928302915,
+                        "lng": -6.269386769708497
+                    },
+                    "southwest": {
+                        "lat": 53.34199486970851,
+                        "lng": -6.272084730291501
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/worship_general-71.png",
+            "name": "Christ Church Cathedral",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 1080,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/116038643500618987525\"\u003ejulis chung\u003c/a\u003e"
+                    ],
+                    "photo_reference": "Aap_uED-cQZPlSNPizY8UnxQfeBLsa-_kZf5WPOPe9y663caRqGYnzMZLQJYJN69o8zvbas8E8FewNUxR50nRZCMpMx0K8wJKU5Hm9RgTO_9koFoXwmIh8A3hysy4GYxtgpyI-vkqRntpd9mkCoxyjqhG7yhTV1TVqrzeM-5_aPATg-P5PrZ",
+                    "width": 981
+                }
+            ],
+            "place_id": "ChIJGw9ASiYMZ0gRy9yiaCZxNZI",
+            "plus_code": {
+                "compound_code": "8PVH+CH Dublin 8, Ireland",
+                "global_code": "9C5M8PVH+CH"
+            },
+            "rating": 4.5,
+            "reference": "ChIJGw9ASiYMZ0gRy9yiaCZxNZI",
+            "scope": "GOOGLE",
+            "types": [
+                "tourist_attraction",
+                "church",
+                "place_of_worship",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 7180,
+            "vicinity": "Christchurch Place, Dublin 8"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 53.34837609999999,
+                    "lng": -6.277354400000001
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 53.3496220302915,
+                        "lng": -6.275652919708498
+                    },
+                    "southwest": {
+                        "lat": 53.3469240697085,
+                        "lng": -6.278350880291502
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "name": "Jameson Distillery Bow St.",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 2333,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/112602874552069330302\"\u003eJameson Distillery Bow St.\u003c/a\u003e"
+                    ],
+                    "photo_reference": "Aap_uEBQ5SHWaiZ5DCCSl8OVkLNaww_RPfHmMrGc1gmU1Q1nIVQuEh-njPx7VIkpLw_nzSsSmdqxU6CPDBpHt-3pD6xr4_WQ7lpRrqdbvf6We4wyX6uv8nORuEZu7O000aGZHd4KlfC5XVDqtogZI0kc4jYvaa3DmKE6int-uiOlPCUhtLM",
+                    "width": 4150
+                }
+            ],
+            "place_id": "ChIJs0Ciwy4MZ0gRFFpl7MaNZAQ",
+            "plus_code": {
+                "compound_code": "8PXF+93 Dublin 7, Ireland",
+                "global_code": "9C5M8PXF+93"
+            },
+            "rating": 4.6,
+            "reference": "ChIJs0Ciwy4MZ0gRFFpl7MaNZAQ",
+            "scope": "GOOGLE",
+            "types": [
+                "tourist_attraction",
+                "travel_agency",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 2099,
+            "vicinity": "Bow Street, Smithfield, Dublin 7"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 53.3486388,
+                    "lng": -6.266711399999999
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 53.34999518029151,
+                        "lng": -6.265304769708498
+                    },
+                    "southwest": {
+                        "lat": 53.34729721970851,
+                        "lng": -6.268002730291503
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+            "name": "The Church Café, Late Bar & Restaurant",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 810,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/109375596155682495426\"\u003eThe Church Café, Late Bar &amp; Restaurant\u003c/a\u003e"
+                    ],
+                    "photo_reference": "Aap_uEBoK3K9bTSXgU4Ih6OT6oCH-L9I2cw6nyD-4u9NUKcjWiBWTsDK85SsXilh-yoKwm-OkXbGFNqUD5KH9Pg-oW2STmpunBP_zfp-wOen42hepz-wyIubl02A4LuYInpXTlwSRzeh_tE8dhufmmzp6CYl3XCRjvH-DasNYEAV1621ulgX",
+                    "width": 1440
+                }
+            ],
+            "place_id": "ChIJtTOXRIIOZ0gRiLAbrd61jVs",
+            "plus_code": {
+                "compound_code": "8PXM+F8 Dublin 1, Ireland",
+                "global_code": "9C5M8PXM+F8"
+            },
+            "price_level": 2,
+            "rating": 4.4,
+            "reference": "ChIJtTOXRIIOZ0gRiLAbrd61jVs",
+            "scope": "GOOGLE",
+            "types": [
+                "bar",
+                "tourist_attraction",
+                "cafe",
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 8913,
+            "vicinity": "Junction of Mary St. and, Jervis Street, Dublin 1"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 53.360712,
+                    "lng": -6.251208999999999
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 53.36308375,
+                        "lng": -6.246947099999998
+                    },
+                    "southwest": {
+                        "lat": 53.35749595,
+                        "lng": -6.2551531
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/stadium-71.png",
+            "name": "Croke Park",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 1090,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/114331688094458557881\"\u003eCroke Park\u003c/a\u003e"
+                    ],
+                    "photo_reference": "Aap_uECtjXnsTTY69fTc6oi6iDba-pv53BZZjL6ura3PMdtYtUq8zwR-Z0OYdWtVaCEkLZ0j-fBVm87IfJa9sLSvsS1rCJh2jde2GOSX25Vj0jo1fZNVKfXmRrqq21wzSYyuf4ItHPnZuWXJxS6-c9wp_GTt0nxctPIpSeIR5ZFh1MUIOJci",
+                    "width": 2363
+                }
+            ],
+            "place_id": "ChIJlflkkmMOZ0gRX7SIDoZHE-U",
+            "plus_code": {
+                "compound_code": "9P6X+7G Dublin 3, Ireland",
+                "global_code": "9C5M9P6X+7G"
+            },
+            "rating": 4.7,
+            "reference": "ChIJlflkkmMOZ0gRX7SIDoZHE-U",
+            "scope": "GOOGLE",
+            "types": [
+                "stadium",
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 13342,
+            "vicinity": "Jones' Road, Drumcondra, Dublin 3"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 53.3402225,
+                    "lng": -6.2549209
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 53.34175563029149,
+                        "lng": -6.253830869708497
+                    },
+                    "southwest": {
+                        "lat": 53.3390576697085,
+                        "lng": -6.256528830291502
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+            "name": "National Museum of Ireland - Archaeology",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 4032,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/116790194136502009892\"\u003eFelipe Vieira\u003c/a\u003e"
+                    ],
+                    "photo_reference": "Aap_uEAlZS3VtrQY4QCxvmfbwck6jmEO7jOKrjEP-KIVEXlfIZ_NHEHTIMpXUjCe3uTzSXKVwrVTDtYdqjYhIYX6gF1VpBkE3smoAUeQK8YOLlqwYrxZriJnmxObBQTEf3AXm7wBuH8hYOEhuoiNbVSoN2DfqeuxYeiTWdnkp8UsmPxBYJIC",
+                    "width": 3024
+                }
+            ],
+            "place_id": "ChIJS7Q-vDEMZ0gRWoYY0_5aAVY",
+            "plus_code": {
+                "compound_code": "8PRW+32 Dublin 2, Ireland",
+                "global_code": "9C5M8PRW+32"
+            },
+            "rating": 4.5,
+            "reference": "ChIJS7Q-vDEMZ0gRWoYY0_5aAVY",
+            "scope": "GOOGLE",
+            "types": [
+                "museum",
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 8213,
+            "vicinity": "Kildare Street, Dublin 2"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 53.3381736,
+                    "lng": -6.259119
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 53.3416854,
+                        "lng": -6.252298399999998
+                    },
+                    "southwest": {
+                        "lat": 53.3345726,
+                        "lng": -6.2656632
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+            "name": "St Stephen's Green",
+            "photos": [
+                {
+                    "height": 2592,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/103685323348642144093\"\u003eMarcin Polak\u003c/a\u003e"
+                    ],
+                    "photo_reference": "Aap_uEAIgWGOtjvIcfTfgZ_fPeCSlQzHzTk-MJmRTTS_hjCk22axFdCIq4NDrx9gGCfYaYte-yc4DDLZnpa9A8HNO2wl7dmanEHhUvEf3wSV5MqLewYgevBJkkWjr_44HS8NlG0GVr7CWyEnVkRsjgz1Daq-g9QkHjYB6GIQEeSjeafLj6h_",
+                    "width": 4608
+                }
+            ],
+            "place_id": "ChIJo5EyLpkOZ0gRfIOtBfARzQU",
+            "plus_code": {
+                "compound_code": "8PQR+79 Dublin 2, Ireland",
+                "global_code": "9C5M8PQR+79"
+            },
+            "rating": 4.7,
+            "reference": "ChIJo5EyLpkOZ0gRfIOtBfARzQU",
+            "scope": "GOOGLE",
+            "types": [
+                "park",
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 21386,
+            "vicinity": "Saint Stephen's Green, Dublin 2"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 53.3449167,
+                    "lng": -6.2601382
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 53.3460671802915,
+                        "lng": -6.258689219708498
+                    },
+                    "southwest": {
+                        "lat": 53.3433692197085,
+                        "lng": -6.261387180291502
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "name": "Irish Houses of Parliament",
+            "photos": [
+                {
+                    "height": 720,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/116038643500618987525\"\u003ejulis chung\u003c/a\u003e"
+                    ],
+                    "photo_reference": "Aap_uEDCsiUzGPpGCX2S8v-YtbaHPHFO_ExzWzz55Kb8i2g8ZfjLR7aZKTyX2CX3Qj9k-JJ34nc7Nwx3YDYgkshTxEI3PTK4qJQdVIMVr12xZJ6n0it_V9bUWnrIFb7D9Fk5fQHMTK74Np4Una1L01NWt4RVjfFG-7wLy-qEgZea4p8dcuZc",
+                    "width": 1138
+                }
+            ],
+            "place_id": "ChIJXfZzqpwOZ0gRXSXFEdlq55c",
+            "plus_code": {
+                "compound_code": "8PVQ+XW Dublin, County Dublin, Ireland",
+                "global_code": "9C5M8PVQ+XW"
+            },
+            "rating": 4.1,
+            "reference": "ChIJXfZzqpwOZ0gRXSXFEdlq55c",
+            "scope": "GOOGLE",
+            "types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 137,
+            "vicinity": "College Green, Dublin"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 53.34934899999999,
+                    "lng": -6.260720999999999
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 53.35073563029149,
+                        "lng": -6.259110069708498
+                    },
+                    "southwest": {
+                        "lat": 53.34803766970849,
+                        "lng": -6.261808030291503
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/civic_building-71.png",
+            "name": "An Post, General Post Office",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 6936,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/100563334919926238843\"\u003eS B\u003c/a\u003e"
+                    ],
+                    "photo_reference": "Aap_uEBfCSnkLRCXuPAGl8HsIA3IRxQS4XLCmnrs3yFexHw-RElF89jQZMP34dJjz4eRVTVL3tHhu3hindcW9vXUSwlTvIY7-7jE0mV3pB4pLNUAE0scenJwD9P_qfTXHMqCueAL6q5jFmURRtLOXeSnGul3d5PwN3bYDk4eLM0W2bNEd6OZ",
+                    "width": 9248
+                }
+            ],
+            "place_id": "ChIJebysQYQOZ0gRpgPPd8gjejc",
+            "plus_code": {
+                "compound_code": "8PXQ+PP Dublin 1, Ireland",
+                "global_code": "9C5M8PXQ+PP"
+            },
+            "rating": 4.3,
+            "reference": "ChIJebysQYQOZ0gRpgPPd8gjejc",
+            "scope": "GOOGLE",
+            "types": [
+                "post_office",
+                "tourist_attraction",
+                "finance",
+                "point_of_interest",
+                "store",
+                "establishment"
+            ],
+            "user_ratings_total": 399,
+            "vicinity": "O'Connell Street Lower, Dublin 1"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 53.3409266,
+                    "lng": -6.2525147
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 53.34238935000003,
+                        "lng": -6.250665619708498
+                    },
+                    "southwest": {
+                        "lat": 53.33964714999999,
+                        "lng": -6.253363580291502
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "name": "National Gallery of Ireland",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 3024,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/114728724411451038982\"\u003eAntonio Testa\u003c/a\u003e"
+                    ],
+                    "photo_reference": "Aap_uECtCWX8PZ5kieHXxN5UMcQyaXHsXlkHT6ICVQrpXG-iHSMEnSecrXugDfPiSokhd0LrUDT6nIBJFG9HMdnOMBOcx0GZhMUrcY784lPyUQmRWd6gj29i3A35N3Yz3CMdik_BMfGGi-bIVHOlT2inKqaVV-DKmRLViHZKNrOfUOt4JOMn",
+                    "width": 4032
+                }
+            ],
+            "place_id": "ChIJb1ecSpcOZ0gRMQ3w0Qyz_Vg",
+            "plus_code": {
+                "compound_code": "8PRW+9X Dublin 2, Ireland",
+                "global_code": "9C5M8PRW+9X"
+            },
+            "rating": 4.6,
+            "reference": "ChIJb1ecSpcOZ0gRMQ3w0Qyz_Vg",
+            "scope": "GOOGLE",
+            "types": [
+                "art_gallery",
+                "tourist_attraction",
+                "point_of_interest",
+                "store",
+                "establishment"
+            ],
+            "user_ratings_total": 9703,
+            "vicinity": "Merrion Square West, Dublin 2"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 53.341978,
+                    "lng": -6.2867111
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 53.3431217802915,
+                        "lng": -6.285375769708498
+                    },
+                    "southwest": {
+                        "lat": 53.3404238197085,
+                        "lng": -6.288073730291503
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "name": "Guinness Storehouse",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 1137,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/110355596328533403957\"\u003eGuinness Storehouse\u003c/a\u003e"
+                    ],
+                    "photo_reference": "Aap_uECkUF-vsqeS-AYE9NXX9hbvBK4svKo9MxrwTNUN5M1KrXiaNg3t_A4kRuYrqbEPVasypNrCDRSS47NI0J_RBi0jsfpqDDtXFM_3KtMIrpzRWKh_jdnCStuyPegVz0xavrOvOtnzMtZPIeU0oJLj4NjoTIwWh9_gvsQd5mdXYihpyQmh",
+                    "width": 1850
+                }
+            ],
+            "place_id": "ChIJawXFQIQOZ0gRoucFdZIzGbM",
+            "plus_code": {
+                "compound_code": "8PR7+Q8 Dublin 8, Ireland",
+                "global_code": "9C5M8PR7+Q8"
+            },
+            "rating": 4.4,
+            "reference": "ChIJawXFQIQOZ0gRoucFdZIzGbM",
+            "scope": "GOOGLE",
+            "types": [
+                "tourist_attraction",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 11930,
+            "vicinity": "St. James's Gate, Dublin 8"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 53.34109840000001,
+                    "lng": -6.2544821
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 53.34241108029151,
+                        "lng": -6.253481469708496
+                    },
+                    "southwest": {
+                        "lat": 53.33971311970851,
+                        "lng": -6.256179430291501
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/civic_building-71.png",
+            "name": "National Library of Ireland",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 3024,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/115896494200329517188\"\u003eSophie V\u003c/a\u003e"
+                    ],
+                    "photo_reference": "Aap_uEA2hFwvhWFILQlqmwks4m_QrYZ45httOargGMG7m3sPOC4QA-ialpiduexAjH6hhP9AOB1WO4t1aOe3KPG3-eTevOZ_I_iHq7_61c_VZBZthPT0dXtxmk7OHQAOafFzr3RQE9Wa7WgnUXEnYLBzkZIabiFlhGNUIpz4KrYYlidcdv5T",
+                    "width": 4032
+                }
+            ],
+            "place_id": "ChIJid3zGZoOZ0gR4Xqexy1v_g0",
+            "plus_code": {
+                "compound_code": "8PRW+C6 Dublin, County Dublin, Ireland",
+                "global_code": "9C5M8PRW+C6"
+            },
+            "rating": 4.2,
+            "reference": "ChIJid3zGZoOZ0gR4Xqexy1v_g0",
+            "scope": "GOOGLE",
+            "types": [
+                "library",
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 110,
+            "vicinity": "7-8 Kildare Street, Dublin 2"
+        },
+        {
+            "business_status": "CLOSED_TEMPORARILY",
+            "geometry": {
+                "location": {
+                    "lat": 53.33988480000001,
+                    "lng": -6.2533478
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 53.3411618802915,
+                        "lng": -6.251356269708498
+                    },
+                    "southwest": {
+                        "lat": 53.3384639197085,
+                        "lng": -6.254054230291502
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+            "name": "National Museum of Ireland - Natural History",
+            "permanently_closed": true,
+            "photos": [
+                {
+                    "height": 4032,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/109078190511274252841\"\u003eEnrico TA\u003c/a\u003e"
+                    ],
+                    "photo_reference": "Aap_uEDGg7YdylRq5bXpUhbCOS8z1eNtADHK7ytq7cskW681dD8D8A7xoTqSANDdqXZYWX8c-1VeRpklPHI8rtqTvpmCAt-t3r_HvA9I-Z69Yqr3YUKA4wLXvc13vQEDoZG-_OSzShljlOCo55gPQGJBHFc5nirDyPZP-6mwT93J_MbLcmhL",
+                    "width": 3024
+                }
+            ],
+            "place_id": "ChIJ60rQWpcOZ0gRMKVjaZ_XYMY",
+            "plus_code": {
+                "compound_code": "8PQW+XM Dublin, County Dublin, Ireland",
+                "global_code": "9C5M8PQW+XM"
+            },
+            "rating": 4.5,
+            "reference": "ChIJ60rQWpcOZ0gRMKVjaZ_XYMY",
+            "scope": "GOOGLE",
+            "types": [
+                "museum",
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 4252,
+            "vicinity": "Merrion Street Upper, Dublin 2"
+        },
+        {
+            "business_status": "CLOSED_TEMPORARILY",
+            "geometry": {
+                "location": {
+                    "lat": 53.34411110000001,
+                    "lng": -6.2614861
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 53.34546008029151,
+                        "lng": -6.260137119708498
+                    },
+                    "southwest": {
+                        "lat": 53.34276211970851,
+                        "lng": -6.262835080291502
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "name": "The Bank on College Green",
+            "permanently_closed": true,
+            "photos": [
+                {
+                    "height": 3024,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/103466352141309410296\"\u003eJules Topalian\u003c/a\u003e"
+                    ],
+                    "photo_reference": "Aap_uEADSlcfi9UNVSBdhN_BM9F0gyftp_r0ja6cUO2g1v0_tFyN13lbf1IQ0ENv8uGcaZu0n4_QoLkOvUvBNCtnV5JUAr9TpTkrMEXn8yp51h8Bx2khh2Nq-2EAm1D8CghQs7irGxbOJSB2dVPYlFL61nz1LGQZvdvLqRKvZA9SHG3d_5DH",
+                    "width": 4032
+                }
+            ],
+            "place_id": "ChIJb01BopwOZ0gRGK_aIlZ-Q4g",
+            "plus_code": {
+                "compound_code": "8PVQ+JC Dublin, County Dublin, Ireland",
+                "global_code": "9C5M8PVQ+JC"
+            },
+            "price_level": 2,
+            "rating": 4.4,
+            "reference": "ChIJb01BopwOZ0gRGK_aIlZ-Q4g",
+            "scope": "GOOGLE",
+            "types": [
+                "tourist_attraction",
+                "bar",
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 3376,
+            "vicinity": "20-22 College Green, Dublin"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 53.3439636,
+                    "lng": -6.2670798
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 53.3453947802915,
+                        "lng": -6.265751019708498
+                    },
+                    "southwest": {
+                        "lat": 53.3426968197085,
+                        "lng": -6.268448980291502
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/civic_building-71.png",
+            "name": "City Hall",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 3640,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/102238108059230733743\"\u003eCity Hall\u003c/a\u003e"
+                    ],
+                    "photo_reference": "Aap_uEDinvOOQ-khBv5J8SJcrnI9Y3kEOPn-SJfuqfUc34H7_wJ83KC4NKIySP0Q1fT4Ea3kj2Qx5JeZcNYNMaJV0I7NNJlIjsmCJrB0xudI1fb4wh4ojeTBN8XF7LjOlBTzSMkOtUs-Ak54C5n8_Fvy1PdQj5Spp3G2PYjcy-foBgr12p2x",
+                    "width": 4856
+                }
+            ],
+            "place_id": "ChIJnwQ3IZ0OZ0gRW1NgrS2vROs",
+            "plus_code": {
+                "compound_code": "8PVM+H5 Dublin, County Dublin, Ireland",
+                "global_code": "9C5M8PVM+H5"
+            },
+            "rating": 4.4,
+            "reference": "ChIJnwQ3IZ0OZ0gRW1NgrS2vROs",
+            "scope": "GOOGLE",
+            "types": [
+                "city_hall",
+                "tourist_attraction",
+                "local_government_office",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 220,
+            "vicinity": "Dame Street, Dublin"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 53.3465858,
+                    "lng": -6.2587875
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 53.3474510302915,
+                        "lng": -6.2578884
+                    },
+                    "southwest": {
+                        "lat": 53.3447530697085,
+                        "lng": -6.2614848
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+            "name": "The National Wax Museum Plus",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 720,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/116038643500618987525\"\u003ejulis chung\u003c/a\u003e"
+                    ],
+                    "photo_reference": "Aap_uEAfmpHyT4v569zzXMihFDZMvMlHMpUh984XZoT14DIQHc2eiOAyJjHovtBmsK8OlDNL5wH5OhYCb1fVO99pYqt2TDEpLyd1bfIblVg0IR3DCSxwn6AKKCMoOkVMArPSdQdoeBW6JNDGhnD0qMUhFA6sPhE0-YHKctJ80klPdSxnPxgG",
+                    "width": 960
+                }
+            ],
+            "place_id": "ChIJR9mP8ScMZ0gRZBrWwuS3qPg",
+            "plus_code": {
+                "compound_code": "8PWR+JF Dublin 2, Ireland",
+                "global_code": "9C5M8PWR+JF"
+            },
+            "rating": 4,
+            "reference": "ChIJR9mP8ScMZ0gRZBrWwuS3qPg",
+            "scope": "GOOGLE",
+            "types": [
+                "tourist_attraction",
+                "museum",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 3243,
+            "vicinity": "The Lafayette Building, 22-25 Westmoreland Street, Temple Bar, Dublin 2"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 53.343149,
+                    "lng": -6.2720614
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 53.3444007302915,
+                        "lng": -6.270709119708497
+                    },
+                    "southwest": {
+                        "lat": 53.3417027697085,
+                        "lng": -6.273407080291502
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+            "name": "Dublinia",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 1108,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/101248902111456663458\"\u003eChaiyot Yetho\u003c/a\u003e"
+                    ],
+                    "photo_reference": "Aap_uEBkzoCC7ojGaklJVUFTeZfnpcPFkKs1KwW_68J_vS2SYi78pGEFb4rBWTf2OAWRybxogE3oRlKIremuMWadtYbazsovzOqXweM44UNm9ERw2Quh3cS_snY6yqUdi-oqe2WuwIvdtYdsndRSkkywbYM9-_ClcHOZFFTiiVRKUSAuQ6fL",
+                    "width": 1478
+                }
+            ],
+            "place_id": "ChIJGerRTiYMZ0gRuVDCYtqFU50",
+            "plus_code": {
+                "compound_code": "8PVH+75 Dublin 8, Ireland",
+                "global_code": "9C5M8PVH+75"
+            },
+            "rating": 4.4,
+            "reference": "ChIJGerRTiYMZ0gRuVDCYtqFU50",
+            "scope": "GOOGLE",
+            "types": [
+                "museum",
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 3673,
+            "vicinity": "St Michaels Hill Christ Church, Dublin 8"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 53.3509092,
+                    "lng": -6.2587707
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 53.35227793029149,
+                        "lng": -6.257298419708498
+                    },
+                    "southwest": {
+                        "lat": 53.34957996970849,
+                        "lng": -6.259996380291502
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/worship_general-71.png",
+            "name": "St Mary's Pro Cathedral",
+            "photos": [
+                {
+                    "height": 3024,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/102881302561350702793\"\u003eJustin Emge\u003c/a\u003e"
+                    ],
+                    "photo_reference": "Aap_uECOxwo1nF8dY66p60MEEiMuxcqbFiA4nrHBxlilzJTW8TJQ4bjTPhrXsieAHb0gCUaRSA_9qFdTXju4jr_H5Vn4aZax3ooq2h5DnfXYtxw0-cuNMXCRZ6vTvKH4PHbJPa6qH6Ab0DUiEyT-70sOnRqsVzcH_JXXhY3P7ve1abudf0dK",
+                    "width": 4032
+                }
+            ],
+            "place_id": "ChIJd-LXKoQOZ0gRKAhX4qNCTMM",
+            "plus_code": {
+                "compound_code": "9P2R+9F Dublin 1, Ireland",
+                "global_code": "9C5M9P2R+9F"
+            },
+            "rating": 4.6,
+            "reference": "ChIJd-LXKoQOZ0gRKAhX4qNCTMM",
+            "scope": "GOOGLE",
+            "types": [
+                "tourist_attraction",
+                "church",
+                "place_of_worship",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 508,
+            "vicinity": "Pro-Cathedral House, 83 Marlborough Street, North City, Dublin 1"
+        },
+        {
+            "business_status" : "OPERATIONAL",
+            "geometry" : {
+               "location" : {
+                  "lat" : 53.3409266,
+                  "lng" : -6.2525147
+               },
+               "viewport" : {
+                  "northeast" : {
+                     "lat" : 53.34238935000003,
+                     "lng" : -6.250665619708498
+                  },
+                  "southwest" : {
+                     "lat" : 53.33964714999999,
+                     "lng" : -6.253363580291502
+                  }
+               }
+            },
+            "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "name" : "National Gallery of Ireland",
+            "opening_hours" : {
+               "open_now" : true
+            },
+            "photos" : [
+               {
+                  "height" : 3024,
+                  "html_attributions" : [
+                     "\u003ca href=\"https://maps.google.com/maps/contrib/114728724411451038982\"\u003eAntonio Testa\u003c/a\u003e"
+                  ],
+                  "photo_reference" : "Aap_uEAh99U5jr76RXn_eqJxg1fBCJtjJGh2OubPOPWFhlx02dS4xPvt2uUuWy1mEmxBW0kn3FxF-yH26UAe4EonWgNwnFACu8MT4kG7E1X09xWovYC9jloEjBuP2WXcQBBoqH25DwF5QHjzm0w9FKBTqVw_s4pR7Yov44O1JBg1F_drPwMv",
+                  "width" : 4032
+               }
+            ],
+            "place_id" : "ChIJb1ecSpcOZ0gRMQ3w0Qyz_Vg",
+            "plus_code" : {
+               "compound_code" : "8PRW+9X Dublin 2, Ireland",
+               "global_code" : "9C5M8PRW+9X"
+            },
+            "rating" : 4.6,
+            "reference" : "ChIJb1ecSpcOZ0gRMQ3w0Qyz_Vg",
+            "scope" : "GOOGLE",
+            "types" : [
+               "art_gallery",
+               "tourist_attraction",
+               "point_of_interest",
+               "store",
+               "establishment"
+            ],
+            "user_ratings_total" : 9715,
+            "vicinity" : "Merrion Square West, Dublin 2"
+         },
+         {
+            "business_status" : "OPERATIONAL",
+            "geometry" : {
+               "location" : {
+                  "lat" : 53.3423167,
+                  "lng" : -6.2675008
+               },
+               "viewport" : {
+                  "northeast" : {
+                     "lat" : 53.34369403029149,
+                     "lng" : -6.266046669708497
+                  },
+                  "southwest" : {
+                     "lat" : 53.3409960697085,
+                     "lng" : -6.268744630291502
+                  }
+               }
+            },
+            "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+            "name" : "Chester Beatty",
+            "opening_hours" : {
+               "open_now" : true
+            },
+            "photos" : [
+               {
+                  "height" : 720,
+                  "html_attributions" : [
+                     "\u003ca href=\"https://maps.google.com/maps/contrib/116038643500618987525\"\u003ejulis chung\u003c/a\u003e"
+                  ],
+                  "photo_reference" : "Aap_uEBcgPSIXeG23OIp2n8kCkS_J8eFyZyzsaPiWSs8kwknbQE4DHSXNKAQhLCE-w77rJVOhyR-hEYXlk1dN3ZLOM6OQxXCqok9R733UMhoXcbBHm2gVWVk95Cvcy0HOGnX2tu53J8AhTicqw9rCGfDbXEmw7kjfHkwoMiFLWvDN1WzVquQ",
+                  "width" : 1083
+               }
+            ],
+            "place_id" : "ChIJwdmRcp0OZ0gRqwweUr4wWKE",
+            "plus_code" : {
+               "compound_code" : "8PRJ+WX Dublin 2, Ireland",
+               "global_code" : "9C5M8PRJ+WX"
+            },
+            "rating" : 4.7,
+            "reference" : "ChIJwdmRcp0OZ0gRqwweUr4wWKE",
+            "scope" : "GOOGLE",
+            "types" : [ "museum", "art_gallery", "point_of_interest", "establishment" ],
+            "user_ratings_total" : 660,
+            "vicinity" : "Dublin Castle, Dublin 2"
+         },
+         {
+            "business_status" : "OPERATIONAL",
+            "geometry" : {
+               "location" : {
+                  "lat" : 53.35417629999999,
+                  "lng" : -6.2646519
+               },
+               "viewport" : {
+                  "northeast" : {
+                     "lat" : 53.3554432302915,
+                     "lng" : -6.263211369708498
+                  },
+                  "southwest" : {
+                     "lat" : 53.3527452697085,
+                     "lng" : -6.265909330291501
+                  }
+               }
+            },
+            "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "name" : "The Hugh Lane",
+            "opening_hours" : {
+               "open_now" : true
+            },
+            "photos" : [
+               {
+                  "height" : 3000,
+                  "html_attributions" : [
+                     "\u003ca href=\"https://maps.google.com/maps/contrib/107450103333989734283\"\u003eMarco Monteleone\u003c/a\u003e"
+                  ],
+                  "photo_reference" : "Aap_uEC03AY3NKWCk9fzfu0IlEhT3Y0BwYR0YmyQK8fEYfEjISklMzfm5TdSCBgI8Unypt8OfhzhMKH-HF6tRpLduhEHPSsUjV4bUxuyaTM1dzJW8e7X4Kh0avp5HPxkc6a8H95hK_QIRqr0y8kZXuMnUtsYsD0Uqw5IYsKs9clIeNai7JrE",
+                  "width" : 4000
+               }
+            ],
+            "place_id" : "ChIJE42FqWAMZ0gRhDMWDRn7ksw",
+            "plus_code" : {
+               "compound_code" : "9P3P+M4 Dublin, County Dublin, Ireland",
+               "global_code" : "9C5M9P3P+M4"
+            },
+            "rating" : 4.5,
+            "reference" : "ChIJE42FqWAMZ0gRhDMWDRn7ksw",
+            "scope" : "GOOGLE",
+            "types" : [
+               "art_gallery",
+               "tourist_attraction",
+               "museum",
+               "point_of_interest",
+               "establishment"
+            ],
+            "user_ratings_total" : 1404,
+            "vicinity" : "Charlemont House, Parnell Square North, Dublin"
+         },
+         {
+            "business_status" : "OPERATIONAL",
+            "geometry" : {
+               "location" : {
+                  "lat" : 53.34482320000001,
+                  "lng" : -6.265444
+               },
+               "viewport" : {
+                  "northeast" : {
+                     "lat" : 53.34617808029149,
+                     "lng" : -6.264267069708499
+                  },
+                  "southwest" : {
+                     "lat" : 53.3434801197085,
+                     "lng" : -6.266965030291503
+                  }
+               }
+            },
+            "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png",
+            "name" : "Gallery of Photography Ireland",
+            "opening_hours" : {
+               "open_now" : true
+            },
+            "photos" : [
+               {
+                  "height" : 2225,
+                  "html_attributions" : [
+                     "\u003ca href=\"https://maps.google.com/maps/contrib/111283095606463667764\"\u003eGallery of Photography Ireland\u003c/a\u003e"
+                  ],
+                  "photo_reference" : "Aap_uECa1302N4YhpW5CpDDD0D8B3GhJ3SPmZq7SJdkRKYewxvG-43GthVPcUaw-N3FvqU1QklVTdiBMCCfqd_T8pw8dFf7P513v2LjtWfJOU5I25hlxGOq7SNfhetjHcAY4aFmrb7LF-z0AsenLwcUvEZ8j--BfbnucXMWQmxJ2iN6uBo3S",
+                  "width" : 1791
+               }
+            ],
+            "place_id" : "ChIJo0eBLp0OZ0gRChvCIrb6xb0",
+            "plus_code" : {
+               "compound_code" : "8PVM+WR Dublin 8, Ireland",
+               "global_code" : "9C5M8PVM+WR"
+            },
+            "rating" : 4.5,
+            "reference" : "ChIJo0eBLp0OZ0gRChvCIrb6xb0",
+            "scope" : "GOOGLE",
+            "types" : [
+               "art_gallery",
+               "tourist_attraction",
+               "book_store",
+               "university",
+               "point_of_interest",
+               "store",
+               "establishment"
+            ],
+            "user_ratings_total" : 42,
+            "vicinity" : "Meeting House Square, Temple Bar, Dublin 2"
+         },
+         {
+            "business_status" : "OPERATIONAL",
+            "geometry" : {
+               "location" : {
+                  "lat" : 53.3646909,
+                  "lng" : -6.271209799999999
+               },
+               "viewport" : {
+                  "northeast" : {
+                     "lat" : 53.36596593029149,
+                     "lng" : -6.269914119708498
+                  },
+                  "southwest" : {
+                     "lat" : 53.3632679697085,
+                     "lng" : -6.272612080291503
+                  }
+               }
+            },
+            "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+            "name" : "The Bernard Shaw",
+            "opening_hours" : {
+               "open_now" : true
+            },
+            "photos" : [
+               {
+                  "height" : 808,
+                  "html_attributions" : [
+                     "\u003ca href=\"https://maps.google.com/maps/contrib/111909394576569975131\"\u003eThe Bernard Shaw\u003c/a\u003e"
+                  ],
+                  "photo_reference" : "Aap_uEA9vuYQ_DaX4lwXp2nrRKfmyr2aoj6MsD41GWL-doPeiuJHmcgepweaLRB07kT4ijxHF10TfkRFARfiqHvNQID3ySjYjp02wyxoBVEl816l_IAcjh3X7N-MZLOpCHTiif0fewjOWdtKkujdoOH4ieL81Y_eD3tR7RyF5sQ7ufmcCeu5",
+                  "width" : 1194
+               }
+            ],
+            "place_id" : "ChIJZf8Yh6AOZ0gRhewFFltjO2k",
+            "plus_code" : {
+               "compound_code" : "9P7H+VG Dublin, County Dublin, Ireland",
+               "global_code" : "9C5M9P7H+VG"
+            },
+            "price_level" : 2,
+            "rating" : 4.4,
+            "reference" : "ChIJZf8Yh6AOZ0gRhewFFltjO2k",
+            "scope" : "GOOGLE",
+            "types" : [
+               "art_gallery",
+               "cafe",
+               "bar",
+               "food",
+               "point_of_interest",
+               "establishment"
+            ],
+            "user_ratings_total" : 4197,
+            "vicinity" : "Cross Guns Bridge, Drumcondra, Dublin 9"
+         },
+         {
+            "business_status" : "OPERATIONAL",
+            "geometry" : {
+               "location" : {
+                  "lat" : 53.344891,
+                  "lng" : -6.2638908
+               },
+               "viewport" : {
+                  "northeast" : {
+                     "lat" : 53.34622873029151,
+                     "lng" : -6.262278969708498
+                  },
+                  "southwest" : {
+                     "lat" : 53.34353076970851,
+                     "lng" : -6.264976930291502
+                  }
+               }
+            },
+            "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+            "name" : "The RAGE - Record, Art and Game Emporium",
+            "opening_hours" : {
+               "open_now" : true
+            },
+            "photos" : [
+               {
+                  "height" : 320,
+                  "html_attributions" : [
+                     "\u003ca href=\"https://maps.google.com/maps/contrib/115690745875619718870\"\u003eKarl-Michael Schneider\u003c/a\u003e"
+                  ],
+                  "photo_reference" : "Aap_uED7ID4rDZVj-cIsW2wRJqMqZsfF7Cyfze4utGjzA5APSFHtAgxGtE1lnED7b7yxX7ORHSf-vCsQ65qdldzh4ayNNglM88JvSqrrsyAubG3vp94gXKs6CJIdfR3uBTWz9Er5ltW3zRUKPkap5vlR3a7YLQUz9DE0HlfrtLOds3WqPI33",
+                  "width" : 480
+               }
+            ],
+            "place_id" : "ChIJhcx8TZwOZ0gRmhBdiuh0HUU",
+            "plus_code" : {
+               "compound_code" : "8PVP+XC Dublin, County Dublin, Ireland",
+               "global_code" : "9C5M8PVP+XC"
+            },
+            "rating" : 4.6,
+            "reference" : "ChIJhcx8TZwOZ0gRmhBdiuh0HUU",
+            "scope" : "GOOGLE",
+            "types" : [
+               "art_gallery",
+               "electronics_store",
+               "home_goods_store",
+               "point_of_interest",
+               "store",
+               "establishment"
+            ],
+            "user_ratings_total" : 311,
+            "vicinity" : "8 Crow Street, Temple Bar"
+         },
+         {
+            "business_status" : "OPERATIONAL",
+            "geometry" : {
+               "location" : {
+                  "lat" : 53.3410349,
+                  "lng" : -6.255706399999999
+               },
+               "viewport" : {
+                  "northeast" : {
+                     "lat" : 53.3423215802915,
+                     "lng" : -6.254391619708497
+                  },
+                  "southwest" : {
+                     "lat" : 53.3396236197085,
+                     "lng" : -6.257089580291502
+                  }
+               }
+            },
+            "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "name" : "Gorry Gallery",
+            "photos" : [
+               {
+                  "height" : 4032,
+                  "html_attributions" : [
+                     "\u003ca href=\"https://maps.google.com/maps/contrib/104938849938848471828\"\u003eRick Coslo\u003c/a\u003e"
+                  ],
+                  "photo_reference" : "Aap_uEBcMrMSNtvS_nP5j3p24h9QyrDV6oIvR_6sd-o9UardDH3vV7epkr3TakGZTkaJs0ZiHhtpWabnokYbIbd97oul6nBNrliZcMQTaD7FczYr2HDsuuenxfEVoWZtKZT4TQki_0ah44JLV3XcMgdCKk04vdIXdvOIhwMuORZRzJRk4XyV",
+                  "width" : 1960
+               }
+            ],
+            "place_id" : "ChIJSwtZFMJWREgRfAKo387E5bY",
+            "plus_code" : {
+               "compound_code" : "8PRV+CP Dublin 2, Ireland",
+               "global_code" : "9C5M8PRV+CP"
+            },
+            "rating" : 4,
+            "reference" : "ChIJSwtZFMJWREgRfAKo387E5bY",
+            "scope" : "GOOGLE",
+            "types" : [ "art_gallery", "point_of_interest", "establishment" ],
+            "user_ratings_total" : 4,
+            "vicinity" : "20 Molesworth Street, Dublin 2"
+         },
+         {
+            "business_status" : "OPERATIONAL",
+            "geometry" : {
+               "location" : {
+                  "lat" : 53.34416359999999,
+                  "lng" : -6.268713900000001
+               },
+               "viewport" : {
+                  "northeast" : {
+                     "lat" : 53.3453807802915,
+                     "lng" : -6.267330069708498
+                  },
+                  "southwest" : {
+                     "lat" : 53.3426828197085,
+                     "lng" : -6.270028030291503
+                  }
+               }
+            },
+            "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+            "name" : "Dublin Ink",
+            "opening_hours" : {
+               "open_now" : true
+            },
+            "photos" : [
+               {
+                  "height" : 591,
+                  "html_attributions" : [
+                     "\u003ca href=\"https://maps.google.com/maps/contrib/106683944904801473822\"\u003eDublin Ink\u003c/a\u003e"
+                  ],
+                  "photo_reference" : "Aap_uEBvfvL3kYqarRppuVWf3lqNBsZXU9qY97flWSOBHlJqhWNoHIw0qNIDTlW4bAjeobk0W7LqMFPdSXfx7lLg6qvU_Pmo247h8ayNUQjjWw0gZFdFZEJzuaOelsvbT_Vo7nP1CSHDZBNKE427MJDzLXbdud2zQcRCHFunh0PtfHrdrvrB",
+                  "width" : 528
+               }
+            ],
+            "place_id" : "ChIJw3mi8ScMZ0gR9qtxIXdt0g8",
+            "plus_code" : {
+               "compound_code" : "8PVJ+MG Dublin, County Dublin, Ireland",
+               "global_code" : "9C5M8PVJ+MG"
+            },
+            "rating" : 4.7,
+            "reference" : "ChIJw3mi8ScMZ0gR9qtxIXdt0g8",
+            "scope" : "GOOGLE",
+            "types" : [ "art_gallery", "point_of_interest", "store", "establishment" ],
+            "user_ratings_total" : 359,
+            "vicinity" : "Sauls Court, 4, Cow's Lane, Temple Bar, Dublin"
+         },
+         {
+            "business_status" : "CLOSED_TEMPORARILY",
+            "geometry" : {
+               "location" : {
+                  "lat" : 53.34412489999999,
+                  "lng" : -6.2502951
+               },
+               "viewport" : {
+                  "northeast" : {
+                     "lat" : 53.34537708029149,
+                     "lng" : -6.249043619708497
+                  },
+                  "southwest" : {
+                     "lat" : 53.34267911970849,
+                     "lng" : -6.251741580291502
+                  }
+               }
+            },
+            "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "name" : "Science Gallery Dublin",
+            "permanently_closed" : true,
+            "photos" : [
+               {
+                  "height" : 3456,
+                  "html_attributions" : [
+                     "\u003ca href=\"https://maps.google.com/maps/contrib/100563334919926238843\"\u003eS B\u003c/a\u003e"
+                  ],
+                  "photo_reference" : "Aap_uEAaXEZr5y8W5g7S1UAq_KZy3TFnB6b5TtR5X7NMKAKGpKbHVIfNOFDvcOO8JjLnTICx2vaYvAj8Tybr2MUVthom1OKV_DcBU4-yDz8E0m4unqSO3IrtJPQNGLCIQJODLY9EiROz0DjD6e9IqvT_OVVDmFMzBewL0_Hf6yG3ekfo06qH",
+                  "width" : 4608
+               }
+            ],
+            "place_id" : "ChIJrWets5EOZ0gRYReQK4VxrEc",
+            "plus_code" : {
+               "compound_code" : "8PVX+JV Dublin 2, Ireland",
+               "global_code" : "9C5M8PVX+JV"
+            },
+            "rating" : 4.3,
+            "reference" : "ChIJrWets5EOZ0gRYReQK4VxrEc",
+            "scope" : "GOOGLE",
+            "types" : [ "art_gallery", "point_of_interest", "establishment" ],
+            "user_ratings_total" : 1945,
+            "vicinity" : "Trinity College Dublin, Naughton Institute, The, Pearse Street, Dublin 2"
+         },
+         {
+            "business_status" : "OPERATIONAL",
+            "geometry" : {
+               "location" : {
+                  "lat" : 53.3422534,
+                  "lng" : -6.256291399999999
+               },
+               "viewport" : {
+                  "northeast" : {
+                     "lat" : 53.3436181302915,
+                     "lng" : -6.255020469708498
+                  },
+                  "southwest" : {
+                     "lat" : 53.3409201697085,
+                     "lng" : -6.257718430291503
+                  }
+               }
+            },
+            "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "name" : "The Doorway Gallery",
+            "opening_hours" : {
+               "open_now" : true
+            },
+            "photos" : [
+               {
+                  "height" : 4480,
+                  "html_attributions" : [
+                     "\u003ca href=\"https://maps.google.com/maps/contrib/107455857997870132694\"\u003eThe Doorway Gallery\u003c/a\u003e"
+                  ],
+                  "photo_reference" : "Aap_uEBD8hMVne8-a-mtNLHTyVmjg8mvkGphdw52XJG_RnlwX3EoPzd6gKX2xjI1VetpdKJX-EUN0gqd7irMo8MJkCc1I30XxFA_1mU4chCePd2GLF9p7NN48LaP56AeLQUeKyrBzFilE4H_3TIc-Y4DxsOgLIrHkw1PmECdpBXzjqZwwXPY",
+                  "width" : 3922
+               }
+            ],
+            "place_id" : "ChIJgxXXUZoOZ0gRXt5nZ3C3iEM",
+            "plus_code" : {
+               "compound_code" : "8PRV+WF Dublin, County Dublin, Ireland",
+               "global_code" : "9C5M8PRV+WF"
+            },
+            "rating" : 4.7,
+            "reference" : "ChIJgxXXUZoOZ0gRXt5nZ3C3iEM",
+            "scope" : "GOOGLE",
+            "types" : [ "art_gallery", "point_of_interest", "establishment" ],
+            "user_ratings_total" : 38,
+            "vicinity" : "24 Frederick Street South, Dublin 2"
+         },
+         {
+            "business_status" : "OPERATIONAL",
+            "geometry" : {
+               "location" : {
+                  "lat" : 53.34316829999999,
+                  "lng" : -6.269821099999998
+               },
+               "viewport" : {
+                  "northeast" : {
+                     "lat" : 53.3445308302915,
+                     "lng" : -6.268482719708498
+                  },
+                  "southwest" : {
+                     "lat" : 53.3418328697085,
+                     "lng" : -6.271180680291502
+                  }
+               }
+            },
+            "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "name" : "Gallery Number One",
+            "opening_hours" : {
+               "open_now" : true
+            },
+            "place_id" : "ChIJEdRPvCcMZ0gREanoJRDfmuk",
+            "plus_code" : {
+               "compound_code" : "8PVJ+73 Dublin 8, Ireland",
+               "global_code" : "9C5M8PVJ+73"
+            },
+            "reference" : "ChIJEdRPvCcMZ0gREanoJRDfmuk",
+            "scope" : "GOOGLE",
+            "types" : [ "art_gallery", "point_of_interest", "establishment" ],
+            "vicinity" : "1 Castle Street, Christchurch"
+         },
+         {
+            "business_status" : "OPERATIONAL",
+            "geometry" : {
+               "location" : {
+                  "lat" : 53.3544789,
+                  "lng" : -6.261017499999999
+               },
+               "viewport" : {
+                  "northeast" : {
+                     "lat" : 53.3558714802915,
+                     "lng" : -6.259576819708498
+                  },
+                  "southwest" : {
+                     "lat" : 53.35317351970851,
+                     "lng" : -6.262274780291502
+                  }
+               }
+            },
+            "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "name" : "13 North Great George's Street Space",
+            "place_id" : "ChIJx8IoEocOZ0gRu8fZIosdtD0",
+            "plus_code" : {
+               "compound_code" : "9P3Q+QH Dublin, County Dublin, Ireland",
+               "global_code" : "9C5M9P3Q+QH"
+            },
+            "rating" : 4.4,
+            "reference" : "ChIJx8IoEocOZ0gRu8fZIosdtD0",
+            "scope" : "GOOGLE",
+            "types" : [ "art_gallery", "point_of_interest", "establishment" ],
+            "user_ratings_total" : 18,
+            "vicinity" : "13 North Great George's Street, Dublin"
+         },
+         {
+            "business_status" : "OPERATIONAL",
+            "geometry" : {
+               "location" : {
+                  "lat" : 53.340106,
+                  "lng" : -6.261872299999999
+               },
+               "viewport" : {
+                  "northeast" : {
+                     "lat" : 53.3413304302915,
+                     "lng" : -6.259988919708497
+                  },
+                  "southwest" : {
+                     "lat" : 53.3386324697085,
+                     "lng" : -6.262686880291501
+                  }
+               }
+            },
+            "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "name" : "The Green Gallery",
+            "opening_hours" : {
+               "open_now" : false
+            },
+            "photos" : [
+               {
+                  "height" : 1536,
+                  "html_attributions" : [
+                     "\u003ca href=\"https://maps.google.com/maps/contrib/117849811706097996078\"\u003eThe Green Gallery\u003c/a\u003e"
+                  ],
+                  "photo_reference" : "Aap_uEDFUlP0pN9klggX3pKlJEQzfPvXs8H_44mPcB0wtGLnGvUJkN_ZuFVJ1Yds9zB1BiRjopxCMoZhQQ_AocGO5s_eLvVKZWLV33PO637PmcjH2cjuUvKOgl53iGZMPbyBfOuwl0d4zS5Ca-XBaGGySvQVct_MK6PCLbMiUpfLIsEIxiRe",
+                  "width" : 2048
+               }
+            ],
+            "place_id" : "ChIJY2DQhZ4OZ0gRxb2g5wO_l0s",
+            "plus_code" : {
+               "compound_code" : "8PRQ+27 Dublin 2, Ireland",
+               "global_code" : "9C5M8PRQ+27"
+            },
+            "rating" : 4.6,
+            "reference" : "ChIJY2DQhZ4OZ0gRxb2g5wO_l0s",
+            "scope" : "GOOGLE",
+            "types" : [ "art_gallery", "point_of_interest", "establishment" ],
+            "user_ratings_total" : 30,
+            "vicinity" : "Top Floor Stephen's Green Centre, Dublin 2"
+         },
+         {
+            "business_status" : "OPERATIONAL",
+            "geometry" : {
+               "location" : {
+                  "lat" : 53.344979,
+                  "lng" : -6.266262999999999
+               },
+               "viewport" : {
+                  "northeast" : {
+                     "lat" : 53.34638098029149,
+                     "lng" : -6.264935969708498
+                  },
+                  "southwest" : {
+                     "lat" : 53.34368301970849,
+                     "lng" : -6.267633930291503
+                  }
+               }
+            },
+            "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "name" : "Project Arts Centre",
+            "opening_hours" : {
+               "open_now" : true
+            },
+            "photos" : [
+               {
+                  "height" : 1371,
+                  "html_attributions" : [
+                     "\u003ca href=\"https://maps.google.com/maps/contrib/103106759745313982332\"\u003eSteve O&#39;Connor\u003c/a\u003e"
+                  ],
+                  "photo_reference" : "Aap_uEDGg3_8WgdSVk7sGR3eI6ouYKhr-6nCgsVBLiE8A-8VC2MMkyzBndqYFNbdp9EWVGKRkfhXE95-8gNGorr018PnR3-y1qfFXoeDCAE_7TVIcwT2dplfne2255zSgsVDtDKBfW47OkQJmW9_VCR9Rfr5TIz7GBDM6qAjspBglwdslysb",
+                  "width" : 2048
+               }
+            ],
+            "place_id" : "ChIJV0-_NZ0OZ0gRZiTa_ulLFbY",
+            "plus_code" : {
+               "compound_code" : "8PVM+XF Dublin 2, Ireland",
+               "global_code" : "9C5M8PVM+XF"
+            },
+            "rating" : 4.5,
+            "reference" : "ChIJV0-_NZ0OZ0gRZiTa_ulLFbY",
+            "scope" : "GOOGLE",
+            "types" : [ "art_gallery", "point_of_interest", "establishment" ],
+            "user_ratings_total" : 239,
+            "vicinity" : "39 Essex Street East, Dublin 2"
+         },
+         {
+            "business_status" : "OPERATIONAL",
+            "geometry" : {
+               "location" : {
+                  "lat" : 53.3522682,
+                  "lng" : -6.264139399999999
+               },
+               "viewport" : {
+                  "northeast" : {
+                     "lat" : 53.35361718029149,
+                     "lng" : -6.262790419708496
+                  },
+                  "southwest" : {
+                     "lat" : 53.35091921970849,
+                     "lng" : -6.265488380291501
+                  }
+               }
+            },
+            "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "name" : "Hillsboro Fine Art",
+            "photos" : [
+               {
+                  "height" : 1024,
+                  "html_attributions" : [
+                     "\u003ca href=\"https://maps.google.com/maps/contrib/104010024638283114673\"\u003eVictor Angelo\u003c/a\u003e"
+                  ],
+                  "photo_reference" : "Aap_uEB0GYtajQPTmkjjdcS0MDwbGTidL_-ZaCWM6M8S7MDN7QtjZNjCGuXJYnGasUy8wYunYdOUnQQqgO_e56q8QM8xE6YAZs2WFqpUMYYu6c3pPlRVIci4CrMt7PKEs4FOyFw-a1i6Gc25fJm__uWn0xLKNAX1n1AsMpa-KPbNf_P44Ezr",
+                  "width" : 657
+               }
+            ],
+            "place_id" : "ChIJGwKZOYEOZ0gRmacXXoTTsqc",
+            "plus_code" : {
+               "compound_code" : "9P2P+W8 Dublin, County Dublin, Ireland",
+               "global_code" : "9C5M9P2P+W8"
+            },
+            "rating" : 5,
+            "reference" : "ChIJGwKZOYEOZ0gRmacXXoTTsqc",
+            "scope" : "GOOGLE",
+            "types" : [ "art_gallery", "point_of_interest", "establishment" ],
+            "user_ratings_total" : 5,
+            "vicinity" : "49 Parnell Square West, Dublin"
+         },
+         {
+            "business_status" : "OPERATIONAL",
+            "geometry" : {
+               "location" : {
+                  "lat" : 53.346171,
+                  "lng" : -6.260722099999999
+               },
+               "viewport" : {
+                  "northeast" : {
+                     "lat" : 53.3475176802915,
+                     "lng" : -6.259323319708497
+                  },
+                  "southwest" : {
+                     "lat" : 53.3448197197085,
+                     "lng" : -6.262021280291501
+                  }
+               }
+            },
+            "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "name" : "The Icon Factory & The Icon Walk",
+            "opening_hours" : {
+               "open_now" : true
+            },
+            "photos" : [
+               {
+                  "height" : 3549,
+                  "html_attributions" : [
+                     "\u003ca href=\"https://maps.google.com/maps/contrib/101783485458458787405\"\u003eDavid Heath Williams\u003c/a\u003e"
+                  ],
+                  "photo_reference" : "Aap_uEAKmMkTiACBORdxRy_TBjb8L-vqxDB7iDmiMpxtHeVv-5zr-fVXKyxOFQt0EpG6gynWo_I8ENwzVWTcKd15wbLwh7I9hQ3GwMnwUiONM3sr5v7U2fQJFK6IMfw03yntn7S-46JvLT2m2stIrGTbsd6JA7iYq7oktCrGE_tklWkgE_Lz",
+                  "width" : 4848
+               }
+            ],
+            "place_id" : "ChIJq2EtpYQOZ0gRDbZ7QNj-luQ",
+            "plus_code" : {
+               "compound_code" : "8PWQ+FP Dublin, County Dublin, Ireland",
+               "global_code" : "9C5M8PWQ+FP"
+            },
+            "rating" : 4.6,
+            "reference" : "ChIJq2EtpYQOZ0gRDbZ7QNj-luQ",
+            "scope" : "GOOGLE",
+            "types" : [ "art_gallery", "point_of_interest", "establishment" ],
+            "user_ratings_total" : 61,
+            "vicinity" : "3 Aston Place, Temple Bar, Dublin"
+         },
+         {
+            "business_status" : "OPERATIONAL",
+            "geometry" : {
+               "location" : {
+                  "lat" : 53.3461563,
+                  "lng" : -6.2607664
+               },
+               "viewport" : {
+                  "northeast" : {
+                     "lat" : 53.3475070302915,
+                     "lng" : -6.259344819708498
+                  },
+                  "southwest" : {
+                     "lat" : 53.3448090697085,
+                     "lng" : -6.262042780291502
+                  }
+               }
+            },
+            "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "name" : "Aga Szot Studio",
+            "photos" : [
+               {
+                  "height" : 567,
+                  "html_attributions" : [
+                     "\u003ca href=\"https://maps.google.com/maps/contrib/112907065619903843794\"\u003eAga Szot\u003c/a\u003e"
+                  ],
+                  "photo_reference" : "Aap_uEDMCamHtxDufCeCQWcIW3McU56aiRACTRA0VadMUleBt59W0fN42jNBnjG1H-oa_Yo2a-tVbHl9vgDlYRPk2p9860hVXSKIJeTe2wspmWQjDKLcNxKPqk2v2ponDidJ6-9mdTB7fbd6gO97RYrhW1QFIjceIPHCLJAWoR5dd-EUuV-A",
+                  "width" : 850
+               }
+            ],
+            "place_id" : "ChIJz9sRpYQOZ0gRHUG0tuZpB9g",
+            "plus_code" : {
+               "compound_code" : "8PWQ+FM Dublin, County Dublin, Ireland",
+               "global_code" : "9C5M8PWQ+FM"
+            },
+            "rating" : 5,
+            "reference" : "ChIJz9sRpYQOZ0gRHUG0tuZpB9g",
+            "scope" : "GOOGLE",
+            "types" : [ "art_gallery", "point_of_interest", "establishment" ],
+            "user_ratings_total" : 1,
+            "vicinity" : "3 Aston Place, Temple Bar, Dublin"
+         },
+         {
+            "business_status" : "OPERATIONAL",
+            "geometry" : {
+               "location" : {
+                  "lat" : 53.3460759,
+                  "lng" : -6.258297
+               },
+               "viewport" : {
+                  "northeast" : {
+                     "lat" : 53.3474248802915,
+                     "lng" : -6.256948019708497
+                  },
+                  "southwest" : {
+                     "lat" : 53.3447269197085,
+                     "lng" : -6.259645980291502
+                  }
+               }
+            },
+            "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "name" : "Sol Art Gallery",
+            "opening_hours" : {
+               "open_now" : false
+            },
+            "photos" : [
+               {
+                  "height" : 1000,
+                  "html_attributions" : [
+                     "\u003ca href=\"https://maps.google.com/maps/contrib/112658767018525202543\"\u003eSol Art Gallery\u003c/a\u003e"
+                  ],
+                  "photo_reference" : "Aap_uEBvuCGo831qtiReobrFyKLcQdEAXGEdui_wmSBo25kCIym_vXzErx98nVK0bkgNW_vX_sXpizZSds8NZJY5Uv38oKqId4XG4X9RMa-VIuDORCwp934fuMGeW9hnwb9vhPt6HIPC2R3bl_FYGuMe_8dVG2FKcDw_1wsvEkS5tTdpj8l_",
+                  "width" : 665
+               }
+            ],
+            "place_id" : "ChIJ4ShjsJsOZ0gRu7B_rdduwf8",
+            "plus_code" : {
+               "compound_code" : "8PWR+CM Dublin 2, Ireland",
+               "global_code" : "9C5M8PWR+CM"
+            },
+            "rating" : 4.5,
+            "reference" : "ChIJ4ShjsJsOZ0gRu7B_rdduwf8",
+            "scope" : "GOOGLE",
+            "types" : [ "art_gallery", "point_of_interest", "establishment" ],
+            "user_ratings_total" : 110,
+            "vicinity" : "The Times Building, Unit 3, D'Olier Street, Dublin 2"
+         },
+         {
+            "business_status" : "OPERATIONAL",
+            "geometry" : {
+               "location" : {
+                  "lat" : 53.3498511,
+                  "lng" : -6.2535408
+               },
+               "viewport" : {
+                  "northeast" : {
+                     "lat" : 53.3511647802915,
+                     "lng" : -6.252268419708497
+                  },
+                  "southwest" : {
+                     "lat" : 53.3484668197085,
+                     "lng" : -6.254966380291502
+                  }
+               }
+            },
+            "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "name" : "In-spire Galerie Dublin",
+            "opening_hours" : {
+               "open_now" : true
+            },
+            "photos" : [
+               {
+                  "height" : 4032,
+                  "html_attributions" : [
+                     "\u003ca href=\"https://maps.google.com/maps/contrib/102656613429508206057\"\u003eMichael O&#39;Neill\u003c/a\u003e"
+                  ],
+                  "photo_reference" : "Aap_uECL-4Tf_yXJuStwm0QzyR_RMlQwkJl5eNv12e7SQkF6Xfks4UlOFbHV_AY0bB0ddQfeMuT40wKgIzCpX7gky1dIEC-7TbB-BZtvhAf-IGtBvDnSN0fE-kGXT0pL9CktjKWHcVwsXVTiO-ikdj_S3h_jdnQMI7KAQm72LJ9x2HW8uLY-",
+                  "width" : 3024
+               }
+            ],
+            "place_id" : "ChIJ8Z6jao8OZ0gRYbXveJjVI8E",
+            "plus_code" : {
+               "compound_code" : "8PXW+WH Dublin, County Dublin, Ireland",
+               "global_code" : "9C5M8PXW+WH"
+            },
+            "rating" : 4.6,
+            "reference" : "ChIJ8Z6jao8OZ0gRYbXveJjVI8E",
+            "scope" : "GOOGLE",
+            "types" : [ "art_gallery", "point_of_interest", "establishment" ],
+            "user_ratings_total" : 31,
+            "vicinity" : "56 Gardiner Street Lower, Dublin"
+         },
+         {
+            "business_status" : "OPERATIONAL",
+            "geometry" : {
+               "location" : {
+                  "lat" : 53.35165909999999,
+                  "lng" : -6.253334499999999
+               },
+               "viewport" : {
+                  "northeast" : {
+                     "lat" : 53.35299428029149,
+                     "lng" : -6.252050619708498
+                  },
+                  "southwest" : {
+                     "lat" : 53.35029631970849,
+                     "lng" : -6.254748580291502
+                  }
+               }
+            },
+            "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "name" : "Oonagh Young Gallery",
+            "opening_hours" : {
+               "open_now" : true
+            },
+            "photos" : [
+               {
+                  "height" : 499,
+                  "html_attributions" : [
+                     "\u003ca href=\"https://maps.google.com/maps/contrib/103153238039783560144\"\u003eOonagh Young\u003c/a\u003e"
+                  ],
+                  "photo_reference" : "Aap_uEAkAHBSFqRsR8L1U3gDIoEQYG_tI-moRnPvPkxF9J4oGmxEQrLv1thME3F1ztXh5ZQfdfLJTpHWabYOFf2AkHDezL_mLCXaGkh6yLhMPplNqXX7b4llTMzxGpQUICWH7Vf0tSG9va1ER--JdweiWALg75Kv7Ki1h_3yx4wnK4fSE-i1",
+                  "width" : 750
+               }
+            ],
+            "place_id" : "ChIJU0sVxogOZ0gRWj8YvLhDG0E",
+            "plus_code" : {
+               "compound_code" : "9P2W+MM Dublin, County Dublin, Ireland",
+               "global_code" : "9C5M9P2W+MM"
+            },
+            "rating" : 4.2,
+            "reference" : "ChIJU0sVxogOZ0gRWj8YvLhDG0E",
+            "scope" : "GOOGLE",
+            "types" : [ "art_gallery", "point_of_interest", "establishment" ],
+            "user_ratings_total" : 23,
+            "vicinity" : "1 James Joyce Street, Dublin"
+         }
+        
+    ]
+}

@@ -1,0 +1,14 @@
+$primary: #16273f;
+
+// body {
+//   padding-top: 100px;
+// }
+
+.navbar {
+  background: $primary;
+
+  .nav-item {
+    font-size: 1.4rem;
+    padding-right: 1.4rem;
+  }
+}

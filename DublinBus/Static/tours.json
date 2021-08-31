@@ -1,0 +1,508 @@
+{
+    "meta": {
+        "count": 20,
+        "self": "https://test.api.amadeus.com/v1/shopping/activities?latitude=53.3498&longitude=-6.2603&radius=1&key=NtWb3s6JM63zuZ4q2X5eLg7F7gnRmW5LZLbzfAsxsGmw9RLQE8QVTvyt3wee"
+    },
+    "data": [
+        {
+            "id": "13765",
+            "type": "activity",
+            "self": {
+                "href": "https://test.api.amadeus.com/v1/shopping/activities/13765",
+                "methods": [
+                    "GET"
+                ]
+            },
+            "name": "Celtic Boyne Valley Day Trip from Dublin",
+            "shortDescription": "The Celtic Tour along Ireland’s Ancient East brings you to the historically significant Boyne valley situated in County Meath - the Royal County - from where the ancient High Kings of Ireland ruled. Join us on a day of time travel, visiting the Neolithic tombs of Loughcrew, The predominantly Iron Age Hill of Tara, the spiritual center of Ireland; the 7th Century Christian monastery of Fore Abbey, Hill Of Uishneach and the Anglo-Norman Trim castle.",
+            "geoCode": {
+                "latitude": "53.349443",
+                "longitude": "-6.260083"
+            },
+            "rating": "4.600000",
+            "pictures": [
+                "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/6e/e4/5a.jpg"
+            ],
+            "bookingLink": "https://b2c.mla.cloud/c/gFkCgGV2?c=2WxbgL36",
+            "price": {
+                "currencyCode": "EUR",
+                "amount": "45.00"
+            }
+        },
+        {
+            "id": "13777",
+            "type": "activity",
+            "self": {
+                "href": "https://test.api.amadeus.com/v1/shopping/activities/13777",
+                "methods": [
+                    "GET"
+                ]
+            },
+            "name": "Newgrange and Hill of Tara Day Tour from Dublin",
+            "shortDescription": "This Newgrange & Hill of Tara Tour is one of the only tours which includes guaranteed entrance and guided tour of Newgrange’s world-famous Passage Tomb.Departing from Dublin four days a week, it is a must-do for all visiting the island of Ireland. Also stopping at the Hill of Tara, which was once the ancient seat of the High Kings of Ireland, you will also get the opportunity to visit Howth Harbour & Village, renowned for beautiful views over north county Dublin.This unique and once in a lifetime opportunity includes a guaranteed guided visit to the Newgrange Passage Tomb, a UNESCO World Heritage Site dated 3,200BC and is one of the oldest Neolithic burial chambers in Europe, it is even said to be older than the Egyptian pyramids!",
+            "geoCode": {
+                "latitude": "53.349443",
+                "longitude": "-6.260083"
+            },
+            "rating": "4.500000",
+            "pictures": [
+                "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/71/28/2b.jpg"
+            ],
+            "bookingLink": "https://b2c.mla.cloud/c/NrAihLNB?c=2WxbgL36",
+            "price": {
+                "currencyCode": "EUR",
+                "amount": "38.00"
+            }
+        },
+        {
+            "id": "85869",
+            "type": "activity",
+            "self": {
+                "href": "https://test.api.amadeus.com/v1/shopping/activities/85869",
+                "methods": [
+                    "GET"
+                ]
+            },
+            "name": "Day Tour of Wicklow Mountains National Park from Dublin",
+            "shortDescription": "Enjoy a scenic day tour of County Wicklow with a difference. Leave the city behind and embrace the Irish countryside by enjoying a guided walk, horse riding, cycling, or, for a less strenuous adventure, a stroll through the beautiful Powerscourt Estate.",
+            "geoCode": {
+                "latitude": "53.343801",
+                "longitude": "-6.261156"
+            },
+            "rating": "4.497200",
+            "pictures": [
+                "https://cdn.getyourguide.com/img/tour_img-210071-145.jpg"
+            ],
+            "bookingLink": "https://b2c.mla.cloud/c/Zd9xfJwqdo?c=2WxbgL36",
+            "price": {
+                "currencyCode": "EUR",
+                "amount": "28.00"
+            }
+        },
+        {
+            "id": "85871",
+            "type": "activity",
+            "self": {
+                "href": "https://test.api.amadeus.com/v1/shopping/activities/85871",
+                "methods": [
+                    "GET"
+                ]
+            },
+            "name": "The Best of Dublin: Walking Tour in German",
+            "shortDescription": "This informative and exciting tour runs through the most famous places as well as hidden gems of Dublin. See Trinity College, the charming Powerscourt Townhouse Centre and St. Patrick's Cathedral.",
+            "geoCode": {
+                "latitude": "53.343708",
+                "longitude": "-6.261076"
+            },
+            "rating": "4.650600",
+            "pictures": [
+                "https://cdn.getyourguide.com/img/tour_img-233785-145.jpg"
+            ],
+            "bookingLink": "https://b2c.mla.cloud/c/mCKtTAOZBa?c=2WxbgL36",
+            "price": {
+                "currencyCode": "EUR",
+                "amount": "14.00"
+            }
+        },
+        {
+            "id": "85872",
+            "type": "activity",
+            "self": {
+                "href": "https://test.api.amadeus.com/v1/shopping/activities/85872",
+                "methods": [
+                    "GET"
+                ]
+            },
+            "name": "Cliffs of Moher & Galway City Full-Day Tour from Dublin",
+            "shortDescription": "See the Cliffs of Moher on a full-day tour that takes you from Dublin to the West of Ireland and back! Enjoy a relaxed 1-hour guided walk of this charming medieval city of Galway.",
+            "geoCode": {
+                "latitude": "53.350976",
+                "longitude": "-6.260408"
+            },
+            "rating": "4.543300",
+            "pictures": [
+                "https://cdn.getyourguide.com/img/tour_img-210126-145.jpg"
+            ],
+            "bookingLink": "https://b2c.mla.cloud/c/tkAZB925iL?c=2WxbgL36",
+            "price": {
+                "currencyCode": "EUR",
+                "amount": "40.00"
+            }
+        },
+        {
+            "id": "85876",
+            "type": "activity",
+            "self": {
+                "href": "https://test.api.amadeus.com/v1/shopping/activities/85876",
+                "methods": [
+                    "GET"
+                ]
+            },
+            "name": "Cliffs of Moher Tour and Galway City from Dublin",
+            "shortDescription": "Visit the Cliffs of Moher on a day excursion from Dublin to the west of Ireland, passing historic castles and ancient monuments on the way. Enjoy lunch at a traditional pub in Doolin, visit the bohemian city of Galway.",
+            "geoCode": {
+                "latitude": "53.343758",
+                "longitude": "-6.260938"
+            },
+            "rating": "4.606300",
+            "pictures": [
+                "https://cdn.getyourguide.com/img/tour_img-1290033-145.jpg"
+            ],
+            "bookingLink": "https://b2c.mla.cloud/c/A7oP1lF7n0?c=2WxbgL36",
+            "price": {
+                "currencyCode": "EUR",
+                "amount": "50.00"
+            }
+        },
+        {
+            "id": "85891",
+            "type": "activity",
+            "self": {
+                "href": "https://test.api.amadeus.com/v1/shopping/activities/85891",
+                "methods": [
+                    "GET"
+                ]
+            },
+            "name": "DoDublin Hop-on Hop-off Bus Tour",
+            "shortDescription": "Discover the city of Dublin at your own pace with a 24- or 48-hour ticket for a hop-on hop-off tour bus. With stops at Dublin’s major attractions, it is the ideal way to explore the city.",
+            "geoCode": {
+                "latitude": "53.350495",
+                "longitude": "-6.260853"
+            },
+            "rating": "4.386000",
+            "pictures": [
+                "https://cdn.getyourguide.com/img/tour_img-1263312-145.jpg"
+            ],
+            "bookingLink": "https://b2c.mla.cloud/c/OtilTjXfAl?c=2WxbgL36",
+            "price": {
+                "currencyCode": "EUR",
+                "amount": "20.00"
+            }
+        },
+        {
+            "id": "85892",
+            "type": "activity",
+            "self": {
+                "href": "https://test.api.amadeus.com/v1/shopping/activities/85892",
+                "methods": [
+                    "GET"
+                ]
+            },
+            "name": "Wicklow National Park: Small Group Half-Day Tour",
+            "shortDescription": "Leave Dublin and explore the Wicklow Mountains and Glendalough monastery on this unique half-day tour. Enjoy spectacular rural countryside, rivers, lakes, and enjoy a fully-guided walking tour at 6th-century Glendalough and see County Wicklow at its best.",
+            "geoCode": {
+                "latitude": "53.351660",
+                "longitude": "-6.260295"
+            },
+            "rating": "4.718900",
+            "pictures": [
+                "https://cdn.getyourguide.com/img/tour_img-1492045-145.jpg"
+            ],
+            "bookingLink": "https://b2c.mla.cloud/c/yJlxTXrK9u?c=2WxbgL36",
+            "price": {
+                "currencyCode": "EUR",
+                "amount": "35.00"
+            }
+        },
+        {
+            "id": "85900",
+            "type": "activity",
+            "self": {
+                "href": "https://test.api.amadeus.com/v1/shopping/activities/85900",
+                "methods": [
+                    "GET"
+                ]
+            },
+            "name": "Discover Dublin By Boat",
+            "shortDescription": "See Dublin from the River Liffey on a 45-minute boat cruise, and admire the city’s monuments from the water. Learn the history of Dublin, from the arrival of the Vikings to the rapid development of the city in the 18th and 19th centuries.",
+            "geoCode": {
+                "latitude": "53.347169",
+                "longitude": "-6.260798"
+            },
+            "rating": "4.443200",
+            "pictures": [
+                "https://cdn.getyourguide.com/img/tour_img-148473-145.jpg"
+            ],
+            "bookingLink": "https://b2c.mla.cloud/c/6itrbdP1Bh?c=2WxbgL36",
+            "price": {
+                "currencyCode": "EUR",
+                "amount": "14.00"
+            }
+        },
+        {
+            "id": "85905",
+            "type": "activity",
+            "self": {
+                "href": "https://test.api.amadeus.com/v1/shopping/activities/85905",
+                "methods": [
+                    "GET"
+                ]
+            },
+            "name": "From Dublin: Wild Wicklow Mountains and Glendalough Tour",
+            "shortDescription": "Discover why Wicklow is known as “The Garden of Ireland” on an 8.5-hour scenic bus tour and explore the hills, valleys and historic sights of out-of-the-way locations. Go to the monastery of Glendalough and hear tales of Irish myths and legends.",
+            "geoCode": {
+                "latitude": "53.351537",
+                "longitude": "-6.260646"
+            },
+            "rating": "4.808700",
+            "pictures": [
+                "https://cdn.getyourguide.com/img/tour_img-1492066-145.jpg"
+            ],
+            "bookingLink": "https://b2c.mla.cloud/c/y7rV7VTRmy?c=2WxbgL36",
+            "price": {
+                "currencyCode": "EUR",
+                "amount": "33.00"
+            }
+        },
+        {
+            "id": "85909",
+            "type": "activity",
+            "self": {
+                "href": "https://test.api.amadeus.com/v1/shopping/activities/85909",
+                "methods": [
+                    "GET"
+                ]
+            },
+            "name": "Cliffs of Moher Full-Day Tour from Dublin",
+            "shortDescription": "Explore the Cliffs of Moher on a 12-hour tour from Dublin, and travel back through Ireland’s rich heritage on a scenic drive to the Galway coast. Stop en route for spectacular photo opportunities in Kinvara fishing village, Bunratty Castle and more.",
+            "geoCode": {
+                "latitude": "53.349716",
+                "longitude": "-6.253105"
+            },
+            "rating": "4.587300",
+            "pictures": [
+                "https://cdn.getyourguide.com/img/tour_img-1290090-145.jpg"
+            ],
+            "bookingLink": "https://b2c.mla.cloud/c/dWd8mJrC8Q?c=2WxbgL36",
+            "price": {
+                "currencyCode": "EUR",
+                "amount": "45.00"
+            }
+        },
+        {
+            "id": "85912",
+            "type": "activity",
+            "self": {
+                "href": "https://test.api.amadeus.com/v1/shopping/activities/85912",
+                "methods": [
+                    "GET"
+                ]
+            },
+            "name": "Kilkenny and Wicklow Mountain Full-Day Tour from Dublin",
+            "shortDescription": "Get a taste of the true beauty of Ireland on a full-day scenic tour of Kilkenny and Glendalough from Dublin. Admire the rolling hills, rugged mountains, romantic brooks and glacial valleys of County Wicklow, and discover the “Garden of Ireland.”",
+            "geoCode": {
+                "latitude": "53.349716",
+                "longitude": "-6.253105"
+            },
+            "rating": "4.368400",
+            "pictures": [
+                "https://cdn.getyourguide.com/img/tour_img-1492012-145.jpg"
+            ],
+            "bookingLink": "https://b2c.mla.cloud/c/PJIZqUArK5?c=2WxbgL36",
+            "price": {
+                "currencyCode": "EUR",
+                "amount": "30.00"
+            }
+        },
+        {
+            "id": "85913",
+            "type": "activity",
+            "self": {
+                "href": "https://test.api.amadeus.com/v1/shopping/activities/85913",
+                "methods": [
+                    "GET"
+                ]
+            },
+            "name": "Dublin: Cliffs of Moher, Galway Bay and Burren Coastal Drive",
+            "shortDescription": "Drive along the rugged Atlantic Coast to see the dramatic Cliffs of Moher on a full-day scenic tour to the highest cliffs in Europe. With round-trip transportation from Dublin, visit Galway Bay and travel along the thrilling Burren Coast of County Clare.",
+            "geoCode": {
+                "latitude": "53.351419",
+                "longitude": "-6.260858"
+            },
+            "rating": "4.681400",
+            "pictures": [
+                "https://cdn.getyourguide.com/img/tour_img-2279287-145.jpg"
+            ],
+            "bookingLink": "https://b2c.mla.cloud/c/T3hi1Fmfp5?c=2WxbgL36",
+            "price": {
+                "currencyCode": "EUR",
+                "amount": "45.00"
+            }
+        },
+        {
+            "id": "85914",
+            "type": "activity",
+            "self": {
+                "href": "https://test.api.amadeus.com/v1/shopping/activities/85914",
+                "methods": [
+                    "GET"
+                ]
+            },
+            "name": "Wicklow Mountain, Glendalough & Kilkenny Full-Day Tour",
+            "shortDescription": "Take a journey through Ireland on a full-day tour of the Wicklow Mountains, monastic site of Glendalough, and the medieval city of Kilkenny. Enjoy scenic views, lush valleys, and still lakes and watch a shepherd with his trusty border collie sheepdog.",
+            "geoCode": {
+                "latitude": "53.351419",
+                "longitude": "-6.260858"
+            },
+            "rating": "4.572600",
+            "pictures": [
+                "https://cdn.getyourguide.com/img/tour_img-928026-145.jpg"
+            ],
+            "bookingLink": "https://b2c.mla.cloud/c/9Jo6SNdkjD?c=2WxbgL36",
+            "price": {
+                "currencyCode": "EUR",
+                "amount": "33.00"
+            }
+        },
+        {
+            "id": "85953",
+            "type": "activity",
+            "self": {
+                "href": "https://test.api.amadeus.com/v1/shopping/activities/85953",
+                "methods": [
+                    "GET"
+                ]
+            },
+            "name": "Giant's Causeway Full-Day Guided Tour from Dublin",
+            "shortDescription": "Discover one of the most dramatic locations in Northern Ireland with a fully guided tour to the Giant’s Causeway from Dublin. Walk across the Carrick-a-Rede Rope Bridge and stop en route at two sites used in the filming of the TV series “Game of Thrones.”",
+            "geoCode": {
+                "latitude": "53.344130",
+                "longitude": "-6.259529"
+            },
+            "rating": "4.483900",
+            "pictures": [
+                "https://cdn.getyourguide.com/img/tour_img-1289727-145.jpg"
+            ],
+            "bookingLink": "https://b2c.mla.cloud/c/5Kr3PlidrU?c=2WxbgL36",
+            "price": {
+                "currencyCode": "EUR",
+                "amount": "65.00"
+            }
+        },
+        {
+            "id": "85962",
+            "type": "activity",
+            "self": {
+                "href": "https://test.api.amadeus.com/v1/shopping/activities/85962",
+                "methods": [
+                    "GET"
+                ]
+            },
+            "name": "From Dublin: Giants Causeway and Carrick-a-Rede Rope Bridge",
+            "shortDescription": "Discover the dramatic landscapes of Northern Ireland on a day trip to the Giant's Causeway from Dublin. Explore Giant's Causeway, cross the Carrick-a-Rede Rope Bridge, visit Dark Hedges, spend some time in Belfast, see Causeway coastal route on the way.",
+            "geoCode": {
+                "latitude": "53.354143",
+                "longitude": "-6.264588"
+            },
+            "rating": "4.775100",
+            "pictures": [
+                "https://cdn.getyourguide.com/img/tour_img-1289628-145.jpg"
+            ],
+            "bookingLink": "https://b2c.mla.cloud/c/C5pe2TXFZW?c=2WxbgL36",
+            "price": {
+                "currencyCode": "EUR",
+                "amount": "48.00"
+            }
+        },
+        {
+            "id": "85987",
+            "type": "activity",
+            "self": {
+                "href": "https://test.api.amadeus.com/v1/shopping/activities/85987",
+                "methods": [
+                    "GET"
+                ]
+            },
+            "name": "From Dublin: Game of Thrones® and Giant's Causeway Tour",
+            "shortDescription": "Indulge your passion for \"Game of Thrones\" on a magical tour of its filming locations. Depart Dublin and visit the romantic Dark Hedges, spectacular Giant's Causeway, and enjoy quiet villages and Ballintoy Harbor.",
+            "geoCode": {
+                "latitude": "53.354143",
+                "longitude": "-6.264588"
+            },
+            "rating": "4.759700",
+            "pictures": [
+                "https://cdn.getyourguide.com/img/tour_img-1289661-145.jpg"
+            ],
+            "bookingLink": "https://b2c.mla.cloud/c/0D7bLnMChZ?c=2WxbgL36",
+            "price": {
+                "currencyCode": "EUR",
+                "amount": "57.00"
+            }
+        },
+        {
+            "id": "85989",
+            "type": "activity",
+            "self": {
+                "href": "https://test.api.amadeus.com/v1/shopping/activities/85989",
+                "methods": [
+                    "GET"
+                ]
+            },
+            "name": "From Dublin: Cliffs of Moher, Burren & Galway Full-Day Tour",
+            "shortDescription": "Get back to nature and experience the scenic landscapes of Ireland on a day trip to the Cliffs of Moher from Dublin. Visit the city of Galway, journey through The Burren and marvel at the ruins of historic Kilmacduagh Monastery.",
+            "geoCode": {
+                "latitude": "53.354143",
+                "longitude": "-6.264588"
+            },
+            "rating": "4.733100",
+            "pictures": [
+                "https://cdn.getyourguide.com/img/tour_img-1289970-145.jpg"
+            ],
+            "bookingLink": "https://b2c.mla.cloud/c/ZxCY7pmhx5?c=2WxbgL36",
+            "price": {
+                "currencyCode": "EUR",
+                "amount": "44.00"
+            }
+        },
+        {
+            "id": "197203",
+            "type": "activity",
+            "self": {
+                "href": "https://test.api.amadeus.com/v1/shopping/activities/197203",
+                "methods": [
+                    "GET"
+                ]
+            },
+            "name": "Glendalough and Wicklow Half-Day Tour from Dublin",
+            "shortDescription": "Ride through the Irish countryside on a 5-hour tour from Dublin. Travel to Glendalough and Wicklow and take in your surroundings as you pass by movie filming locations, dense forests, towering mountains, sparkling lakes, and babbling brooks.",
+            "geoCode": {
+                "latitude": "53.349621",
+                "longitude": "-6.253440"
+            },
+            "rating": "4.041000",
+            "pictures": [
+                "https://cdn.getyourguide.com/img/tour_img-1491997-145.jpg"
+            ],
+            "bookingLink": "https://b2c.mla.cloud/c/aKTqkws3cI?c=2WxbgL36",
+            "price": {
+                "currencyCode": "EUR",
+                "amount": "25.00"
+            }
+        },
+        {
+            "id": "278496",
+            "type": "activity",
+            "self": {
+                "href": "https://test.api.amadeus.com/v1/shopping/activities/278496",
+                "methods": [
+                    "GET"
+                ]
+            },
+            "name": "Dublin Big Bus Open-Top Hop-on, Hop-off Sightseeing Tours",
+            "shortDescription": "Tour the streets of Dublin with an open-top, hop-on, hop-off sightseeing tour, giving you the freedom to explore the city your way. Choose from the Classic (1-Day), Premium (2-Day) or Deluxe (3-Day) ticket Including 2 routes, a walking tour and more.",
+            "geoCode": {
+                "latitude": "53.351467",
+                "longitude": "-6.260684"
+            },
+            "rating": "4.346200",
+            "pictures": [
+                "https://cdn.getyourguide.com/img/tour_img-2390855-145.jpg"
+            ],
+            "bookingLink": "https://b2c.mla.cloud/c/lEQl5Szh7a?c=2WxbgL36",
+            "price": {
+                "currencyCode": "EUR",
+                "amount": "19.00"
+            }
+        }
+    ]
+}

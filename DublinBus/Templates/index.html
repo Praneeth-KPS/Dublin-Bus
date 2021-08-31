@@ -1,0 +1,1280 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dublin Bus</title>
+
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'Style.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'style_2.css' %}">
+
+</head>
+
+<body>
+
+    <nav class=" navbar navbar-expand-md navbar-dark fixed-top py-3" id="main-nav">
+        <div class="container">
+            <a href="/" class="navbar-brand">
+                <h1 class="d-inline align-middle display-5">Travel Hub</h1>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/about/" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/transport_details/" class="nav-link">Transport Details</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-md-3">
+
+        <form id="Category_form">
+            <div class="input-group">
+                <!-- {% csrf_token %} -->
+                <select id="CategoryDrpDwn" class="form-select form-control" form="Category_form"
+                    aria-label="Category select">
+                    <option disabled selected value="">Select Tourist Attractions</option>
+                    <option value="Cultural">Places of Cultural Significance</option>
+                    <option value="Museums">Museums</option>
+                    <option value="Historic">Historical Landmarks</option>
+                    <option value="Religion">Religious Sites</option>
+                    <option value="Natural">Parks and Landscapes</option>
+                    <option value="Sport">Sports Fields and Stadiums</option>
+                    <option value="Tourist_Facilities">Tourist Places of Interest</option>
+                    <option value="Day_Trip">Day Trips</option>
+                    <!-- <option value="Other">Best Attractions</option> -->
+                </select>
+                <div class="input-group-append">
+                    <button class="btn btn-warning px-md-5 text-light fw-bold" type="button"
+                        onclick="initMap(); hideFullDetailsButton()">Clear
+                        Map</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="accordion my-3" id="search_collapse">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="search_bar">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Search Location
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="search_bar"
+                    data-bs-parent="#search_collapse">
+                    <div class="accordion-body">
+                        <form class="my-4">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" id="txtFrom"
+                                        placeholder="Enter your start location">
+                                    <!-- <button><img id="CurrLocation" class="ImgCurr CurrMarker" src="/static/Images/Current_Location.png" title="View current location" alt="Current Location"/></button> -->
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" id="txtTo"
+                                        placeholder="Enter your destination">
+                                </div>
+                                <div class="col-md-4">
+                                    <select id="RoutingPreference" class="form-control form-select">
+                                        <option disabled selected value="Select">Select Routing Preference</option>
+                                        <option value="FEWER_TRANSFERS">FEWER TRANSFERS</option>
+                                        <option value="LESS_WALKING">LESS WALKING</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="full_details_button" style="display: none;">
+
+            <div class="d-grid gap-2 col-lg-6 mx-auto">
+                <button type="button" class="btn btn-warning mb-3 text-light fw-bold" data-bs-toggle="modal"
+                    data-bs-target="#fullDetailsModal">
+                    See Full Details
+                </button>
+            </div>
+
+            <div class="modal fade" id="fullDetailsModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-flex-end modal-fullscreen">
+                    <div class="modal-content bg-success">
+                        <div class="modal-body">
+                            <div class="row mx-lg-4">
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="card text-white text-center bg-warning mb-3">
+                                        <div class="card-header">
+                                            Journey Details
+                                        </div>
+                                        <div class="card-body">
+                                            <div id="Details" class="card-text">
+                                                <p id="Distance"></p>
+                                                <p id="EstTime"></p>
+                                                <div id="BusInfo"></div>
+                                                <p id="bus_validator"></p>
+                                                <div id="traffic_button" style="display: none;">
+                                                    <button id="TrafficDelay" type="button"
+                                                        class="btn btn-danger btn-block fw-bold">THERE
+                                                        WILL BE
+                                                        DELAYS, DUE TO TRAFFIC CONDITIONS</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-8">
+                                    <div class="card text-primary border-primary mb-3">
+                                        <div class="card-header text-center">
+                                            Directions
+                                        </div>
+                                        <div class="card-body">
+                                            <ol>
+                                                <div id="panel"></div>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="data">
+            <div id="map" class="GoogleMap"></div>
+        </div>
+
+
+        <button class="btn btn-primary fixed-bottom ps-2 pe-0" id="night_mode_button">
+            <div id="Night-mode">
+                <b>Night mode: </b>
+                <label class="toggle">
+                    <input id="slideNightMode" type="checkbox" display="none"><span class="slider"></span>
+                </label>
+            </div>
+        </button>
+
+        <!-- <script type="text/javascript" src="{% static 'index.js' %}"></script> -->
+    </div>
+
+    <script>
+        // var BusStops  = JSON.parse("{{ data|escapejs }}");
+        var BikeStation = JSON.parse("{{ BusStatic|escapejs }}");
+        var BikeDynamic = JSON.parse("{{ BikeDynamic|escapejs }}");
+
+        let map;
+        var Tourist_Category;
+        var Tourist_jsonData;
+        var windowOpen = false;
+        var NextBus = [];
+        var TotalStops = [];
+        var busfare = [];
+        var leapfare = [];
+        var All_category_markers = []
+        var day_tours = false;
+
+        var StartCoord = {
+            lat: 53.3674,
+            lng: -6.3023
+        };
+
+        var EndCoord = {
+            lat: 53.343165294,
+            lng: -6.256165642
+        };
+
+        var directionsService;
+        var directionsDisplay;
+        var Total_Jour_Distance = 0;
+        var Total_Walk = 0;
+
+        function initMap() {
+
+            map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 12,
+                center: { lat: 53.350140, lng: -6.266155 },
+            });
+
+            const transitLayer = new google.maps.TransitLayer();
+            transitLayer.setMap(map);
+
+            var FromInput = document.getElementById('txtFrom');
+            var ToInput = document.getElementById('txtTo');
+
+            // map.controls[google.maps.ControlPosition.TOP_LEFT].push(FromInput);
+            // map.controls[google.maps.ControlPosition.TOP_LEFT].push(ToInput);
+            // map.controls[google.maps.ControlPosition.TOP_LEFT].push(document.getElementById('RoutingPreference'));
+
+            const TransitStyles = [{
+                featureType: "poi",
+                elementType: "labels",
+                stylers: [{ "visibility": "off" }]
+            }];
+            map.setOptions({ styles: TransitStyles });
+
+            var StartIcon = {
+                url: "/static/Images/StartMarker.png",
+                scaledSize: new google.maps.Size(60, 70),
+            };
+
+            var EndIcon = {
+                url: "/static/Images/EndMarker.png",
+                scaledSize: new google.maps.Size(60, 70),
+            };
+
+            var CulturalMarker = {
+                url: "/static/Images/cultural.png",
+                scaledSize: new google.maps.Size(35, 45),
+            };
+
+            var HistoricMarker = {
+                url: "/static/Images/historic.png",
+                scaledSize: new google.maps.Size(35, 45),
+            };
+
+            var MuseumMarker = {
+                url: "/static/Images/museum.png",
+                scaledSize: new google.maps.Size(35, 45),
+            };
+
+            var SportsMarker = {
+                url: "/static/Images/sports.png",
+                scaledSize: new google.maps.Size(35, 45),
+            };
+
+            var NatureMarker = {
+                url: "/static/Images/nature.png",
+                scaledSize: new google.maps.Size(35, 45),
+            };
+
+            var ReligionMarker = {
+                url: "/static/Images/religion.png",
+                scaledSize: new google.maps.Size(35, 45),
+            };
+
+            var TouristInfoMarker = {
+                url: "/static/Images/tourist_info.png",
+                scaledSize: new google.maps.Size(35, 45),
+            };
+
+            var DefaultMarker = {
+                url: "/static/Images/yellow_marker-removebg.png",
+                scaledSize: new google.maps.Size(35, 40),
+            };
+
+            markerStart = new google.maps.Marker({
+                position: StartCoord,
+                map: map,
+                title: 'Start',
+                draggable: true,
+                visible: true,
+                icon: StartIcon,
+            });
+
+            markerEnd = new google.maps.Marker({
+                position: EndCoord,
+                map: map,
+                title: 'End',
+                draggable: true,
+                visible: true,
+                icon: EndIcon,
+            });
+
+            var defaultBounds = new google.maps.LatLngBounds(
+                new google.maps.LatLng(52.999804, -6.841221),
+                new google.maps.LatLng(53.693350, -5.914248));
+
+            var options = {
+                bounds: defaultBounds,
+                strictBounds: true,
+            };
+
+            // night_btn = document.getElementById("Night-mode");
+            // map.controls[google.maps.ControlPosition.TOP_RIGHT].push(night_btn);
+
+            // const locationButton =  document.getElementById("CurrLocation");
+            const locationButton = document.createElement("button");
+            locationButton.innerHTML = '<img class="ImgCurr" src="/static/Images/Current_Location.png" title="View current location" alt="Current Location"/>';
+            locationButton.className = "CurrMarker";
+            locationButton.classList.add("custom-map-control-button");
+            map.controls[google.maps.ControlPosition.TOP_RIGHT].push(locationButton);
+
+            infoWindow = new google.maps.InfoWindow();
+
+            locationButton.addEventListener("click", () => {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(
+                        (position) => {
+                            Current_Location_Add(position);
+                            const pos = {
+                                lat: position.coords.latitude,
+                                lng: position.coords.longitude,
+                            };
+
+                            map.setCenter(pos);
+                            StartCoord = pos;
+                            markerStart.setPosition(StartCoord);
+                            calculateAndDisplayRoute(directionsService, directionsDisplay);
+                        },
+                        () => {
+                            handleLocationError(true, infoWindow, map.getCenter());
+                        }
+                    );
+                }
+            });
+
+            function Current_Location_Add(Curr_Coor) {
+                var geocoder = new google.maps.Geocoder;
+                var Curr_latlng = {
+                    lat: Curr_Coor.coords.latitude,
+                    lng: Curr_Coor.coords.longitude,
+                };
+                geocoder.geocode({
+                    'location': Curr_latlng
+                }, function (results, status) {
+                    if (status === 'OK') {
+                        if (results[0]) {
+                            document.getElementById("txtFrom").value = results[0].formatted_address;
+                        } else {
+                            window.alert('No results found');
+                        }
+                    } else {
+                        window.alert('Geocoder failed due to: ' + status);
+                    }
+                });
+            }
+
+            document.getElementById("Night-mode").addEventListener("click", () => {
+                if (document.getElementById("slideNightMode").checked == true) {
+                    map.setOptions({
+                        styles: [
+                            { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
+                            { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
+                            { elementType: "labels.text.fill", stylers: [{ color: "#746855" }] },
+                            {
+                                featureType: "administrative.locality",
+                                elementType: "labels.text.fill",
+                                stylers: [{ color: "#d59563" }],
+                            },
+                            {
+                                featureType: "poi",
+                                elementType: "labels.text.fill",
+                                stylers: [{ color: "#d59563" }],
+                            },
+                            {
+                                featureType: "poi.park",
+                                elementType: "geometry",
+                                stylers: [{ color: "#263c3f" }],
+                            },
+                            {
+                                featureType: "poi.park",
+                                elementType: "labels.text.fill",
+                                stylers: [{ color: "#6b9a76" }],
+                            },
+                            {
+                                featureType: "road",
+                                elementType: "geometry",
+                                stylers: [{ color: "#38414e" }],
+                            },
+                            {
+                                featureType: "road",
+                                elementType: "geometry.stroke",
+                                stylers: [{ color: "#212a37" }],
+                            },
+                            {
+                                featureType: "road",
+                                elementType: "labels.text.fill",
+                                stylers: [{ color: "#9ca5b3" }],
+                            },
+                            {
+                                featureType: "road.highway",
+                                elementType: "geometry",
+                                stylers: [{ color: "#746855" }],
+                            },
+                            {
+                                featureType: "road.highway",
+                                elementType: "geometry.stroke",
+                                stylers: [{ color: "#1f2835" }],
+                            },
+                            {
+                                featureType: "road.highway",
+                                elementType: "labels.text.fill",
+                                stylers: [{ color: "#f3d19c" }],
+                            },
+                            {
+                                featureType: "transit",
+                                elementType: "geometry",
+                                stylers: [{ color: "#2f3948" }],
+                            },
+                            {
+                                featureType: "transit.station",
+                                elementType: "labels.text.fill",
+                                stylers: [{ color: "#d59563" }],
+                            },
+                            {
+                                featureType: "water",
+                                elementType: "geometry",
+                                stylers: [{ color: "#17263c" }],
+                            },
+                            {
+                                featureType: "water",
+                                elementType: "labels.text.fill",
+                                stylers: [{ color: "#515c6d" }],
+                            },
+                            {
+                                featureType: "water",
+                                elementType: "labels.text.stroke",
+                                stylers: [{ color: "#17263c" }],
+                            },
+                        ],
+                    });
+                }
+                else {
+                    map.setOptions({
+                        styles: [
+                            {
+                                featureType: "poi.business",
+                                stylers: [{ visibility: "off" }],
+                            },
+                            {
+                                featureType: "transit",
+                                elementType: "labels.icon",
+                                stylers: [{ visibility: "off" }],
+                            },
+                        ],
+                    });
+                }
+            });
+
+            autocompleteStart = new google.maps.places.Autocomplete(FromInput, options);
+            autocompleteEnd = new google.maps.places.Autocomplete(ToInput, options);
+
+            // Update values of the search bar instantly when a new place is chosen
+            autocompleteStart.addListener('place_changed', function () {
+                var place = autocompleteStart.getPlace();
+                val = place.formatted_address;
+
+                if (!place.geometry || !place.geometry.location) {
+                    document.getElementById("txtFrom").value = 'No such results';
+                }
+                else {
+                    document.getElementById("txtFrom").value = val;
+                    markerStart.setPosition(place.geometry.location);
+                    markerStart.setVisible(true);
+                    StartCoord.lat = markerStart.getPosition().lat();
+                    StartCoord.lng = markerStart.getPosition().lng();
+                    calculateAndDisplayRoute(directionsService, directionsDisplay);
+                    find_closest_markers();
+                }
+            });
+            autocompleteEnd.addListener('place_changed', function () {
+                var place = autocompleteEnd.getPlace();
+                const val = place.formatted_address;
+
+
+                if (!place.geometry || !place.geometry.location) {
+                    document.getElementById("txtTo").value = 'No such results';
+                }
+                else {
+                    document.getElementById("txtTo").value = val;
+                    markerEnd.setPosition(place.geometry.location);
+                    markerEnd.setVisible(true);
+                    EndCoord.lat = markerEnd.getPosition().lat();
+                    EndCoord.lng = markerEnd.getPosition().lng();
+                    calculateAndDisplayRoute(directionsService, directionsDisplay);
+                    find_closest_markers();
+                }
+            });
+
+            google.maps.event.addListener(markerStart, 'dragend', function (evt) {
+                StartCoord.lat = evt.latLng.lat();
+                StartCoord.lng = evt.latLng.lng();
+                calculateAndDisplayRoute(directionsService, directionsDisplay);
+                find_closest_markers();
+            });
+
+            google.maps.event.addListener(markerEnd, 'dragend', function (evt) {
+                EndCoord.lat = evt.latLng.lat();
+                EndCoord.lng = evt.latLng.lng();
+                calculateAndDisplayRoute(directionsService, directionsDisplay);
+                find_closest_markers();
+            });
+
+            directionsService = new google.maps.DirectionsService;
+            directionsDisplay = new google.maps.DirectionsRenderer;
+            var Bike_directionsDisplay = new google.maps.DirectionsRenderer;
+
+            directionsDisplay.setMap(map);
+            directionsDisplay.setOptions({ suppressMarkers: true });
+
+            Bike_directionsDisplay.setMap(map);
+            Bike_directionsDisplay.setOptions({ suppressMarkers: true });
+
+            var onChangeHandler = function () {
+                calculateAndDisplayRoute(directionsService, directionsDisplay);
+            };
+            document.getElementById('RoutingPreference').addEventListener('change', onChangeHandler);
+
+
+
+            var All_BikeMarkers = [];
+            BikesStatic();
+            function BikesStatic() {
+                var BikeIcon = {
+                    url: "/static/Images/Bike_Icon.png",
+                    scaledSize: new google.maps.Size(32, 40),
+                };
+
+                BikeStation.forEach(station => {
+                    var BikeCoord = { lat: parseFloat(station.Latitude), lng: parseFloat(station.Longitude) };
+                    const BikeMarker = new google.maps.Marker({
+                        position: BikeCoord,
+                        icon: BikeIcon,
+                        map: map
+                    });
+
+                    var BikeInfoWindow = new google.maps.InfoWindow({
+                        content: '',
+                    });
+
+                    BikeDynamic.forEach(Dynamic => {
+                        if (station.Number == Dynamic.Number) {
+                            BikeInfoWindow.setContent('<h3><b>' + station.Name + '</b></h3><br><p><b>Total stands : </b>' + Dynamic.bike_stands + '</p>' + '<p><b> Available bikes : </b>' + Dynamic.available_bikes + '</p>' + '<p><b>Parking slots : </b>' + Dynamic.parking_slots + '</p>');
+                        }
+                    })
+
+                    // add event listeners to map markers
+                    google.maps.event.addListener(BikeMarker, "mouseover", function () {
+                        BikeInfoWindow.open(map, BikeMarker);
+                    });
+                    google.maps.event.addListener(BikeMarker, "mouseout", function () {
+                        BikeInfoWindow.close();
+                    });
+                    google.maps.event.addListener(BikeMarker, "click", function () {
+                        Bike_calculateAndDisplayRoute(directionsService, Bike_directionsDisplay, BikeMarker.getPosition().lat(), BikeMarker.getPosition().lng());
+                    })
+                    All_BikeMarkers.push(BikeMarker);
+                    BikeMarker.setVisible(false);
+                });
+                // Closest_Stands = find_closest_markers();
+                // for(var i=0; i < Closest_Stands.length; i++){
+                //     // var Closest_marker_pos = {lat: parseFloat(Closest_Stands[i].position.lat()), lng: parseFloat(Closest_Stands[i].position.lng())};
+                //     // var Closest_Stand_marker = new google.maps.Marker({
+                //     //     position: Closest_marker_pos,
+                //     //     icon: BikeIcon,
+                //     //     map: map
+                //     // });
+                //     All_BikeMarkers[i].setVisible(true);
+                //     // Closest_Stand_marker.setVisible(true);
+                // }
+            }
+
+            function rad(x) { return x * Math.PI / 180; }
+            function find_closest_markers(event) {
+                var lat = EndCoord.lat;
+                var lng = EndCoord.lng;
+                var R = 6371; // radius of earth in km
+                var t;
+                var n;
+                VisibleBikeMarker();
+                var Closest_Markers = [];
+                while (Closest_Markers.length < 2) {
+                    var dic;
+                    var closest = -1;
+                    var i = 0;
+                    var distances = [];
+                    BikeStation.forEach(row => {
+                        var mlat = row.Latitude;
+                        var mlng = row.Longitude;
+                        var dLat = rad(mlat - lat);
+                        var dLong = rad(mlng - lng);
+                        var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+                            Math.cos(rad(lat)) * Math.cos(rad(lat)) * Math.sin(dLong / 2) * Math.sin(dLong / 2);
+                        var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+                        var d = R * c;
+                        distances[i] = d;
+                        if (closest == -1 || d < distances[closest]) {
+                            if (Closest_Markers.length > 0) {
+                                for (s = 0; s < Closest_Markers.length; s++) {
+                                    if ((Closest_Markers[s].lat == row.Latitude) && (Closest_Markers[s].lng == row.Longitude)) {
+                                        //do nothing
+                                    }
+                                    else {
+                                        closest = i;
+                                        dic = {
+                                            lat: row.Latitude,
+                                            lng: row.Longitude,
+                                        };
+                                    }
+                                }
+                            }
+                            else {
+                                closest = i;
+                                dic = {
+                                    lat: row.Latitude,
+                                    lng: row.Longitude,
+                                };
+                            }
+                        }
+                        i = i + 1;
+                    })
+                    Closest_Markers.push(dic);
+                }
+                for (d = 0; d < Closest_Markers.length; d++) {
+                    for (m = 0; m < All_BikeMarkers.length; m++) {
+                        if ((All_BikeMarkers[m].getPosition().lat() == Closest_Markers[d].lat) && (All_BikeMarkers[m].getPosition().lng() == Closest_Markers[d].lng)) {
+                            All_BikeMarkers[m].setVisible(true);
+
+                        }
+                    }
+                }
+            }
+
+            function VisibleBikeMarker() {
+                for (i = 0; i < All_BikeMarkers.length; i++) {
+                    All_BikeMarkers[i].setVisible(false);
+                }
+            }
+
+            var Bike_currinfo = false;
+            function Bike_calculateAndDisplayRoute(directionsService, directionsDisplay, Destination_Lat, Destination_lng) {
+                if (Bike_currinfo) {
+                    Bike_currinfo.close();
+                }
+                let B_request = {
+                    origin: new google.maps.LatLng({
+                        lat: parseFloat(EndCoord.lat),
+                        lng: parseFloat(EndCoord.lng)
+                    }),
+                    destination: {
+                        lat: parseFloat(Destination_Lat),
+                        lng: parseFloat(Destination_lng)
+                    },
+                    travelMode: "WALKING",
+                };
+
+                var distanceInMeters = google.maps.geometry.spherical.computeDistanceBetween(
+                    new google.maps.LatLng({
+                        lat: EndCoord.lat,
+                        lng: EndCoord.lng
+                    }),
+                    new google.maps.LatLng({
+                        lat: Destination_Lat,
+                        lng: Destination_lng
+                    })
+                );
+                var infowindow = new google.maps.InfoWindow({
+                    content: '',
+                });
+                directionsService.route(B_request, function (response, status) {
+                    if (status === 'OK') {
+                        directionsDisplay.setDirections(response);
+                        var center = response.routes[0].overview_path[Math.floor(response.routes[0].overview_path.length / 2)];
+                        infowindow.setPosition(center);
+                        infowindow.setContent(response.routes[0].legs[0].duration.text + "<br>" + response.routes[0].legs[0].distance.text);
+                        infowindow.open(map);
+                        Bike_currinfo = infowindow;
+                    } else {
+                        window.alert('Direction request failed due to ' + status);
+                    }
+                });
+
+            }
+
+            var Tourists_markers_array = [];
+            var Temp_infowindow = false;
+            var CategoryonChangeHandler = function () {
+                TouristDropDown();
+            };
+
+            document.getElementById('CategoryDrpDwn').addEventListener('change', CategoryonChangeHandler);
+            function TouristDropDown() {
+                if (Tourists_markers_array.length > 0) {
+                    Tourists_markers_array.forEach(function (m) {
+                        m.setMap(null);
+                    });
+                }
+                Tourist_Category = document.getElementById("CategoryDrpDwn").value;
+                if (Tourist_Category == "Day_Trip") {
+                    day_tours = true;
+                    init_tours_markers();
+                } else {
+                    if (day_tours) {
+                        initMap();
+                        day_tours = false;
+                    }
+                    actionOnSelect(function (output) {
+                        Tourist_jsonData = output;
+                        Tourists_500();
+                    });
+                }
+            }
+
+            function actionOnSelect(return_data) {
+                $.ajax({
+                    url: "Historic/", // the endpoint
+                    type: "GET", // http method
+                    data: { param_first: Tourist_Category }, // data sent with the get request
+
+                    success: function (json) {
+                        return_data(json);
+                    },
+
+                    // handle a non-successful response
+                    error: function (xhr, errmsg, err) {
+                        // console.log(xhr.status + ": " + xhr.responseText);
+                    }
+                });
+            }
+
+            function Tourists_500() {
+                features = Tourist_jsonData["features"]
+                features.forEach(feature => {
+                    Tourist_coord = feature["geometry"]["coordinates"];
+                    Tourist_name = feature["properties"]["name"];
+                    Tourist_rate = feature["properties"]["rate"];
+                    Tourist_photo = feature["Photo"];
+                    Tourist_website = feature["Website"];
+                    var Tourist1_coord = { lat: Tourist_coord[1], lng: Tourist_coord[0] };
+
+                    switch (Tourist_Category) {
+                        case "Museums":
+                            ActivityMarker = MuseumMarker;
+                            break;
+                        case "Cultural":
+                            ActivityMarker = CulturalMarker;
+                            break;
+                        case "Historic":
+                            ActivityMarker = HistoricMarker;
+                            break;
+                        case "Sport":
+                            ActivityMarker = SportsMarker;
+                            break;
+                        case "Natural":
+                            ActivityMarker = NatureMarker;
+                            break;
+                        case "Religion":
+                            ActivityMarker = ReligionMarker;
+                            break;
+                        case "Tourist_Facilities":
+                            ActivityMarker = TouristInfoMarker;
+                            break;
+                        default:
+                            ActivityMarker = DefaultMarker;
+                    }
+
+                    if (Tourist_name != '' && Tourist_photo != "null") {
+                        const Tourist1Marker = new google.maps.Marker({
+                            position: Tourist1_coord,
+                            map: map,
+                            icon: ActivityMarker
+                        });
+
+                        Tourists_markers_array.push(Tourist1Marker);
+                        var Tourist1_info = new google.maps.InfoWindow({
+                            content: "",
+                            maxWidth: 300
+                        });
+
+                        if (Tourist_photo == "null" && Tourist_website == "null") {
+                            Tourist1_info.setContent("<div class='card'><div class='card-body'><h5>" + Tourist_name + "</h5><p><b> Rating : </b>" + Tourist_rate + "</p><p><b> Website : </b>No link available</p><div class='d-grid gap-2'><button class='btn btn-primary' type='buttton' onclick='MarkerDirections()'>Get Directions</button></div></div></div>");
+                        }
+                        else if (Tourist_photo == "null") {
+                            Tourist1_info.setContent("<div class='card'><div class='card-body'><h5>" + Tourist_name + "</h5><p><b> Rating : </b>" + Tourist_rate + "</p><p><b> Website : </b><a rel='noopener noreferrer' target='_blank' href='" + Tourist_website + "'>Click here to visit the website.</a></b></p><div class='d-grid gap-2'><button class='btn btn-primary' type='buttton' onclick='MarkerDirections()'>Get Directions</button></div></div></div>");
+                        }
+                        else if (Tourist_website == "null") {
+                            Tourist1_info.setContent("<div class='card'><img class='card-img-top' src='" + Tourist_photo + "'><div class='card-body'><h5>" + Tourist_name + "</h5><p><b> Rating : </b>" + Tourist_rate + "</p><p><b> Website : </b>No link available</p><div class='d-grid gap-2'><button class='btn btn-primary' type='buttton' onclick='MarkerDirections()'>Get Directions</button></div></div></div>");
+                        }
+                        else {
+                            Tourist1_info.setContent("<div class='card'><img class='card-img-top' src='" + Tourist_photo + "'><div class='card-body'><h5>" + Tourist_name + "</h5><p><b> Rating : </b>" + Tourist_rate + "</p><p><b> Website : </b><a rel='noopener noreferrer' target='_blank' href='" + Tourist_website + "'>Click here to visit the website.</a></b></p><div class='d-grid gap-2'><button class='btn btn-primary' type='buttton' onclick='MarkerDirections()'>Get Directions</button></div></div></div>");
+                        }
+                        google.maps.event.addListener(Tourist1Marker, "click", function () {
+                            if (Temp_infowindow) {
+                                Temp_infowindow.close();
+                            }
+                            Temp_infowindow = Tourist1_info;
+                            EndCoord = Tourist1_coord;
+                            Tourist1_info.open(map, Tourist1Marker);
+                            find_closest_markers();
+                        });
+                        google.maps.event.addDomListener(window, "load", initialize);
+                    }
+                });
+            }
+        }
+
+        function init_tours_markers() {
+            var DayTripsMarker = {
+                url: "/static/Images/day_trips.png",
+                scaledSize: new google.maps.Size(35, 45),
+            };
+
+            fetch("/static/tours.json").then(response => {
+                return response.json();
+            }).then(data => {
+
+                // console.log(data);
+                // values = Object.entries(data)[1];
+                // console.log(values);
+                // console.log(data.data);
+
+                values = data.data;
+                // console.log(values[0].name, values[0].geoCode.latitude, values[0].geoCode.longitude);
+
+                values.forEach(value => {
+                    markerLatlng = new google.maps.LatLng(value.geoCode.latitude, value.geoCode.longitude);
+                    const marker = new google.maps.Marker({
+                        position: markerLatlng,
+                        map: map,
+                        title: value.name,
+                        icon: DayTripsMarker
+                    });
+
+                    marker.addListener("click", () => {
+                        if (windowOpen) {
+                            windowOpen.close();
+                        }
+                        const infowindow = new google.maps.InfoWindow({
+                            content: "<div class='card'>"
+                                + "<img class='card-img-top' src='" + value.pictures[0] + "' alt='" + value.name + "'>"
+                                + "<div class='card-body'>"
+                                + "<h5 class='" + value.name + "'>" + value.name + "</h5>"
+                                + "<p class='card-text'><b>Description: </b>" + value.shortDescription + "</p>"
+                                + "<p class='card-text'><b>Price: </b>€" + value.price.amount + "</p>"
+                                + "<a href='" + value.bookingLink + "' class='btn btn-primary' target='_blank'>More Information</a>"
+                                + "</div></div>",
+                            maxWidth: 300
+
+                        });
+                        infowindow.open(map, marker);
+                        windowOpen = infowindow;
+                    });
+                });
+            }).catch(err => {
+                console.log("Error:", err);
+            })
+        }
+
+        function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+            UserPreference = document.getElementById('RoutingPreference').value;
+
+            if (UserPreference == 'Select') {
+                UserPreference = 'FEWER_TRANSFERS';
+            }
+            let request = {
+                origin: StartCoord,
+                destination: EndCoord,
+                travelMode: 'TRANSIT',
+                transitOptions: {
+                    modes: ['BUS'],
+                    routingPreference: UserPreference,
+                },
+                provideRouteAlternatives: true
+                // unitSystem: google.maps.UnitSystem.IMPERIAL,
+            };
+            directionsService.route(request, function (response, status) {
+                if (status === 'OK') {
+                    directionsDisplay.setDirections(response);
+                    writeDirectionsSteps(directionsDisplay.directions.routes[0].legs[0].steps);
+                    // console.log(response.routes.length);
+                    var MultipleRoutes_Array = [];
+                    Total_Jour_Distance = 0;
+                    TotalStops = [];
+
+                    for (var best = 0; best < 1; best++) {
+                        var Route_walkTime = 0;
+                        var Route_JourneySteps = [];
+                        var Route_details = {}
+                        var Route_TotalSteps = response.routes[best].legs[0].steps; // to get the steps in a journey i.e. walk, bus
+
+                        for (var step = 0; step < Route_TotalSteps.length; step++) {
+                            var Route_Step_TravelMode = response.routes[best].legs[0].steps[step].travel_mode;
+                            var Route_StepInst = response.routes[best].legs[0].steps[step].instructions;
+                            Route_StepInst = Route_StepInst.slice(0, 3);
+                            if (Route_Step_TravelMode == "WALKING") {
+                                Route_walkTime = Route_walkTime + parseInt(response.routes[best].legs[0].steps[step].duration['text']);
+                            }
+                            else if (Route_Step_TravelMode == "TRANSIT" && Route_StepInst == "Bus") {
+                                Estimated_journey_time = parseInt(response.routes[best].legs[0].steps[step].duration['text']);
+                                var Route_BusTime = response.routes[best].legs[0].steps[step].duration['value'];
+                                Route_BusTime = Route_BusTime + (Estimated_journey_time) * 60;
+                                var Route_number = response.routes[best].legs[0].steps[step].transit.line.short_name;
+                                var Route_total_stops = response.routes[best].legs[0].steps[step].transit.num_stops;
+                                var Route_distance = parseFloat(response.routes[best].legs[0].steps[step].distance['text']);
+                                var Route_dep_coord = response.routes[best].legs[0].steps[step].start_location;
+                                var Route_Arr_coord = response.routes[best].legs[0].steps[step].end_location;
+                                var Route_dep_hr = response.routes[best].legs[0].steps[step].transit.departure_time.value;
+                                var Route_weekDay = Route_dep_hr.toString().slice(0, 3);
+                                var Route_month = Route_dep_hr.toString().slice(4, 7);
+                                var Route_Date = Route_dep_hr.toString().slice(3, 16)
+
+                                var Route_rush_hr = 0;
+                                Route_dep_hr = Route_dep_hr.toString().slice(16, 18);
+                                if ((Route_dep_hr >= 7 && Route_dep_hr <= 9) || (Route_dep_hr >= 16 && Route_dep_hr <= 18)) {
+                                    Route_rush_hr = 1;
+                                }
+                                if (Route_weekDay == 'Sat' || Route_weekDay == 'Sun') {
+                                    Route_weekDay = 1;
+                                }
+                                else {
+                                    Route_weekDay = 0;
+                                }
+                                TotalStops.push(Route_total_stops);
+                                // console.log(Route_total_stops);
+                                // console.log(response.routes[best].legs[0].steps[step].transit);
+
+                                Total_Jour_Distance = Total_Jour_Distance + Route_distance;
+                                Route_details['BusNumber'] = Route_number;
+                                Route_details['Distance'] = Route_distance;
+                                Route_details['DepCoord'] = Route_dep_coord;
+                                Route_details['ArrCord'] = Route_Arr_coord;
+                                Route_details['TotalBusStops'] = Route_total_stops;
+                                Route_details['Est_journey_time'] = (Estimated_journey_time * 60);
+                                Route_details['Dept_time_24_hr'] = Route_dep_hr;
+                                Route_details['Day_Of_Week'] = Route_weekDay;
+                                Route_details['Month'] = Route_month;
+                                Route_details['Rush_hr'] = Route_rush_hr;
+                                Route_details['Date'] = Route_Date;
+                                // console.log('bus no' + Route_number);
+                                // console.log('route distance' + Route_distance);
+                                // console.log('total stops' + Route_total_stops);
+                                // console.log('estimated journey time ' + Estimated_journey_time);
+                                // console.log('24 hr format ' + Route_dep_hr);
+                                // console.log('weekday ' + Route_weekDay);
+                                // console.log('Month ' + Route_month);
+                                // console.log(Route_details);
+
+                                Route_JourneySteps.push(JSON.stringify(Route_details));
+                                // console.log(Route_JourneySteps);
+                            }
+                        }
+
+                        var Route_walktime_till_busstop = 0;
+                        if (response.routes[0].legs[0].steps[0].travel_mode == "WALKING") {
+                            Route_walktime_till_busstop = response.routes[0].legs[0].steps[0].duration['text'];
+
+                        }
+                        else {
+                            Route_walktime_till_busstop = "0 mins";
+                        }
+                        Route_JourneySteps.push({ 'Walktime_busStop': Route_walktime_till_busstop });
+                        Total_Walk = Total_Walk + Route_walkTime;
+                        Route_JourneySteps.push({ 'Total_walkTime': Route_walkTime });
+                        MultipleRoutes_Array.push(Route_JourneySteps);
+                    }
+                    Route_JourneySteps_JSON = JSON.stringify(MultipleRoutes_Array);
+                } else {
+                    window.alert('No route available between these stops');
+                }
+                Model_Call(Route_JourneySteps_JSON);
+            });
+            CalculateDistance();
+        }
+
+        function CalculateDistance() {
+            var service = new google.maps.DistanceMatrixService();
+            service.getDistanceMatrix(
+                {
+                    origins: [StartCoord],
+                    destinations: [EndCoord],
+                    travelMode: google.maps.TravelMode.TRANSIT,
+                    transitOptions: {
+                        modes: ['BUS', 'RAIL', 'TRAIN', 'TRAM'],
+                        routingPreference: UserPreference,
+                    },
+                    unitSystem: google.maps.UnitSystem.metric,
+
+                }, callback);
+        }
+
+        function callback(response, status) {
+            if (status != google.maps.DistanceMatrixStatus.OK) {
+                console.log('error');
+            }
+            else {
+                showFullDetailsButton();
+
+                var origin = response.originAddresses[0];
+                var destination = response.destinationAddresses[0];
+                if (response.rows[0].elements[0].status == 'ZERO_RESULTS') {
+                    console.log('No roads between origin and destination');
+                }
+                else {
+                    var distance = response.rows[0].elements[0].distance;
+                    var duration = response.rows[0].elements[0].duration;
+                    var distance_in_kilo = distance.value / 1000;
+                    var distance_in_mile = distance.value / 1609.34;
+                    var duration_text = duration.text;
+                    var duration_value = duration.value;
+                    document.getElementById('Distance').innerHTML = 'Distance: ' + distance_in_kilo.toFixed(2) + 'km';
+                }
+            }
+        }
+
+        function showFullDetailsButton() {
+            document.getElementById("full_details_button").style.display = "block"; //show
+        }
+
+        function hideFullDetailsButton() {
+            document.getElementById("full_details_button").style.display = "none"; //hide
+        }
+
+        function showTrafficButton() {
+            document.getElementById("traffic_button").style.display = "block"; //show
+        }
+
+        function hideTrafficButton() {
+            document.getElementById("traffic_button").style.display = "none"; //hide
+        }
+
+
+        function writeDirectionsSteps(steps) {
+            // showFullDetailsButton();
+            var directions = document.getElementById('panel');
+            directions.innerHTML = '';
+
+            for (var i = 0; i < steps.length; i++) {
+
+                directions.innerHTML += '<li><div class="fw-bold">' + steps[i].instructions + '</div>' + steps[i].distance.text;
+
+                if (!!steps[i].transit) {
+                    directions.innerHTML += '<p>Go to Bus Stop: ' + steps[i].transit.arrival_stop.name + '</p>';
+                }
+            }
+
+            directions.innerHTML += '</li>';
+
+        }
+
+        function Model_Call(RouteSteps) { //make ajax request to call the model function in views page without refreshing the window.
+            // console.log("This is model function");
+            $.ajax({
+                url: "Model/", // the endpoint
+                type: "GET", // http method
+                dataType: 'json',
+                contentType: 'application/json',
+                data: { Details: RouteSteps }, // data sent with the get request
+
+                success: function (ModelResponse) {
+                    var lastDigit = String(ModelResponse).substr(-1);
+                    Est_Model_Min = (ModelResponse / 60);
+                    // console.log("MODEL, IN MINUTES: " + Est_Model_Min);
+                    document.getElementById('Distance').innerHTML = 'Total Travel Distance: ' + Total_Jour_Distance.toFixed(2) + ' km';
+                    // document.getElementById('TripTime').innerHTML = 'Total Walk Time :' + Total_Walk + ' mins';
+                    document.getElementById('EstTime').innerHTML = 'Estimated Travel Time: ' + Math.ceil(Est_Model_Min) + ' mins';
+                    var div = document.getElementById('BusInfo');
+                    for (var i = 0; i < NextBus.length; i++) {
+                        var ptag = document.createElement("p");
+                        id = "bustime" + (i + 1);
+                        ptag.setAttribute("id", id);
+                        ptag.innerHTML = (i + 1) + ' bus is at: ' + NextBus[i];
+                        div.appendChild(ptag);
+                    }
+                    busfare = [];
+                    leapfare = [];
+                    for (var j = 0; j < TotalStops.length; j++) {
+                        if (TotalStops[j] >= 1 && TotalStops[j] <= 3) {
+                            busfare = busfare + 2.10;
+                            leapfare = leapfare + 1.50;
+                        }
+                        else if (TotalStops[j] >= 4 && TotalStops[j] <= 13) {
+                            busfare.push("2.85");
+                            leapfare.push("2.15");
+                        }
+                        else {
+                            busfare.push("3.30");
+                            leapfare.push("2.60");
+                        }
+                    }
+
+                    // busfare = busfare.toFixed(2);
+                    // leapfare = leapfare.toFixed(2);
+
+                    var f_exists = document.getElementById("cashfare");
+                    var l_exists = document.getElementById("leapfare");
+                    var bus_validator_check = document.getElementById("bus_validator");
+
+                    // if ($('#cashfare').length && $('#leapfare').length) {
+                    if (typeof (f_exists) != 'undefined' && f_exists != null) {
+                        var ptag_fare = document.getElementById("cashfare");
+                        var ptag_leap = document.getElementById("leapfare");
+                        ptag_fare.innerHTML = 'Total cash fare: ';
+                        ptag_leap.innerHTML = 'Total leap fare: ';
+                        // if (busfare.length > 1) {
+                        for (var i = 0; i < busfare.length; i++) {
+                            ptag_fare.innerHTML += '€' + busfare[i] + ' ';
+                            ptag_leap.innerHTML += '€' + leapfare[i] + ' ';
+                            if (leapfare[i] == '2.60') {
+                                console.log('YES VALIDATOR');
+                                bus_validator_check.innerHTML = 'Scan Leap Card at the smart reader';
+                            } else {
+                                bus_validator_check.innerHTML = 'Pay with the bus driver';
+                            }
+                        }
+                        // } else {
+                        //     ptag_fare.innerHTML += '€' + busfare[];
+                        //     ptag_leap.innerHTML += '€' + leapfare;
+                        // }
+                    }
+                    else {
+                        var ptag_fare = document.createElement("p");
+                        var ptag_leap = document.createElement("p");
+                        ptag_fare.setAttribute("id", "cashfare");
+                        ptag_leap.setAttribute("id", "leapfare");
+                        ptag_fare.innerHTML = 'Total cash fare: ';
+                        ptag_leap.innerHTML = 'Total leap fare: ';
+                        for (var i = 0; i < busfare.length; i++) {
+                            ptag_fare.innerHTML += '€' + busfare[i] + ' ';
+                            ptag_leap.innerHTML += '€' + leapfare[i] + ' ';
+                            if (leapfare[i] == '2.60') {
+                                console.log('YES VALIDATOR');
+                                bus_validator_check.innerHTML = 'Scan Leap Card at the smart reader for €2.60';
+                            } else {
+                                bus_validator_check.innerHTML = 'Pay with the bus driver';
+                            }
+                        }
+                        div.appendChild(ptag_fare);
+                        div.appendChild(ptag_leap);
+                    }
+                    Traffic_Model_Call();
+                },
+
+                // handle a non-successful response
+                error: function (xhr, errmsg, err) {
+                    console.log(xhr.status + ": " + xhr.responseText);
+                }
+            });
+        }
+
+        function Traffic_Model_Call() {
+            $.ajax({
+                url: "Traffic_Model/", // the endpoint
+                type: "GET", // http method
+
+                success: function (ModelResponse) {
+                    console.log(ModelResponse)
+                    if (ModelResponse == 1) {
+                        showTrafficButton();
+                    } else {
+                        hideTrafficButton();
+                    }
+                },
+
+                // handle a non-successful response
+                error: function (xhr, errmsg, err) {
+                    console.log(xhr.status + ": " + xhr.responseText);
+                }
+            });
+        }
+
+        function MarkerDirections() {
+            calculateAndDisplayRoute(directionsService, directionsDisplay);
+        }
+
+        function initialize() {
+
+            // var infoWindow = new google.maps.InfoWindow();
+            var name, address, photo, markerLatlng, marker;
+
+            $.getJSON('/static/tourist.json', function (data) {
+                $.each(data.results, function (i, value) {
+
+                    markerLatlng = new google.maps.LatLng(value.geometry.location.lat, value.geometry.location.lng);
+                    marker = new google.maps.Marker({
+                        position: markerLatlng,
+                        map: map,
+                        title: value.name
+                    });
+
+                    marker.addListener("click", () => {
+                        if (windowOpen) {
+                            windowOpen.close();
+                        }
+                        const infowindow = new google.maps.InfoWindow({
+                            content: "<div class='card'>"
+                                + "<img class='card-img-top' src='#' alt='" + value.name + "'>"
+                                + "<div class='card-body'>"
+                                + "<h5 class='" + value.name + "'>" + value.name + "</h5>"
+                                + "<p class='card-text'><b>Description: </b>Text here.</p>"
+                                + "<p><b>Address: </b><p>" + value.vicinity + "</p>"
+                                + "<a href='#' class='btn btn-primary' target='_blank'>More Information</a>"
+                                + "</div></div>",
+                            maxWidth: 300
+                        });
+                        windowOpen = infowindow;
+                        infowindow.open(map, marker);
+                    });
+                });
+            });
+
+        }
+
+        var bus = document.getElementById("TwitterBus");
+        var bike = document.getElementById("TwitterBike");
+        function Twitter_onclick() {
+            var popup = document.getElementById("popuptweets");
+
+            var btnTwitterBus = document.getElementById("btnBus");
+            var btnTwitterBike = document.getElementById("btnBikes");
+
+            // popup.style.visibility = "visible";
+            bus.style.display = "block";
+        }
+
+        function btnBus_onclick() {
+            bike.style.display = "none";
+            bus.style.display = "block";
+        }
+        function btnBikes_onclick() {
+            bus.style.display = "none";
+            bike.style.display = "block";
+        }
+
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?libraries=geometry,places&key=AIzaSyBqJv_wjswvjCTk3tQE5PV_gsHTjL47JYc&callback=initMap"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+</body>

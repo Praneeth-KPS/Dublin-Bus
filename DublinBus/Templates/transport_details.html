@@ -1,0 +1,457 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dublin Bus</title>
+
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'Style.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'style_2.css' %}">
+
+</head>
+
+<body>
+
+    <nav class=" navbar navbar-expand-md navbar-dark fixed-top py-3" id="main-nav">
+        <div class="container">
+            <a href="/" class="navbar-brand">
+                <h1 class="d-inline align-middle display-5">Travel Hub</h1>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/about/" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/transport_details/" class="nav-link">Transport Details</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-md-3">
+
+        <div class="row justify-content-center">
+            <div class="accordion my-3 col-md-6" id="twitter_collapse">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="twitter_bar">
+                        <button class="accordion-button collapsed text-center py-3" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            Live Twitter Updates
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="twitter_bar"
+                        data-bs-parent="#twitter_collapse">
+                        <div class="accordion-body">
+                            <div class="PopupTwitter" id="popuptweets">
+                                <div class="d-flex justify-content-around">
+                                    <button class="btn btn-primary px-4" id="btnBus" onclick="btnBus_onclick()">Dublin
+                                        Bus</button>
+                                    <button class="btn btn-primary px-4" id="btnBikes"
+                                        onclick="btnBikes_onclick()">Dublin
+                                        Bikes</button>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <div id="TwitterBus" style="display: none;">
+                                        <a class="twitter-timeline" data-width="350" data-height="825"
+                                            href="https://twitter.com/dublinbusnews?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"></a>
+                                        <script async src="https://platform.twitter.com/widgets.js"
+                                            charset="utf-8"></script>
+                                    </div>
+                                    <div id="TwitterBike" style="display: none;">
+                                        <a class="twitter-timeline" data-width="350" data-height="825"
+                                            href="https://twitter.com/dublinbikes2go?lang=en"></a>
+                                        <script async src="https://platform.twitter.com/widgets.js"
+                                            charset="utf-8"></script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="transport_row">
+
+            <div class="my-3 col-md-6">
+                <div class="card">
+                    <img src="/static/Images/dublin_bus.jpg" class="card-img-top rounded" alt="dublin bus">
+                    <div class="card-body">
+                        <h2>Dublin Bus</h2>
+                        <p>Dublin bus is the major public transport bus system. Dublin Bus (Irish: Bus Átha Cliath) is a
+                            bus
+                            operator providing services in Dublin. It is a subsidiary of <a
+                                href="https://en.wikipedia.org/wiki/CI%C3%89">Córas Iompair Éireann</a>. The company
+                            carried 138 million passengers in 2019.</p>
+                        <p>Dublin Bus operates an extensive network of 110 radial, cross-city and peripheral routes and
+                            18
+                            night routes in the city of Dublin and the Greater Dublin Area. The company carries around
+                            325,000 people each day. The main radial routes are focused upon Dublin's sixteen Quality
+                            Bus
+                            Corridors which provide buses with daytime access to the city centre.</p>
+                        <p>Express buses (branded "Xpresso") operate on similar routes but have a limited number of
+                            stops
+                            and a higher minimum fare. These services run Monday to Friday at peak times and do not
+                            operate
+                            on public holidays.</p>
+                        <p>Dublin Bus operates a "Nitelink" service of 18 routes overnight which up until January 2009
+                            ran
+                            between Monday and Saturday, with the greatest service frequency being on Friday and
+                            Saturday
+                            nights. Due to cutbacks necessitated by the <a
+                                href="https://en.wikipedia.org/wiki/Post-2008_Irish_economic_downturn">economic
+                                downturn</a>
+                            in Ireland, the midweek schedule
+                            was scrapped. Special (higher) fares apply on Nitelink buses.</p>
+                        <p>Dublin Bus is fully integrated into our app using historical Dublin bus data. We provide
+                            accurate
+                            estimates of travel times for any route and any section of a route for a selected journey.
+                        </p>
+                        <p id="title_line">What is a Leap Card?</p>
+                        <p>A Leap Card is a reusable smart card that can be used instead of paying with cash
+                            when travelling on all Dublin Bus services, including Airlink, Xpresso and Nitelink, as well
+                            as
+                            Luas, DART and Commuter Rail services.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="my-3 col mx-auto">
+                <div class="card">
+                    <img src="/static/Images/leap_card.png" class="card-img-top rounded" alt="leap card">
+                    <div class="card-body">
+                        <h2>FAQs</h2>
+                        <p id="title_line">Where can I buy a Leap Card??</p>
+                        <p>You can buy a Leap Card <a href="https://www.leapcard.ie/Home/index.html"
+                                target="_blank">here</a> or at
+                            any
+                            <a href="https://www.payzone.ie/" target="_blank">Payzone outlet</a>.
+                        </p>
+                        <p id="title_line">Where can I use it?</p>
+                        <p>You can use your Leap Card when travelling on all Dublin Bus services, including Airlink,
+                            Xpresso
+                            and Nitelink, as well as Luas, Dart and Commuter Rail services.</p>
+                        <p id="title_line">How much does it cost?</p>
+                        <p>A fully refundable deposit of €5.00 (Child €3.00) is charged for your card and you must
+                            also
+                            top-up with a minimum of €5.00 Travel Credit.</p>
+                        <p>Full details regarding the prices for
+                            different ticket types can be found <a
+                                href="https://about.leapcard.ie/about/card-ticket-types" target="_blank">here.</a></p>
+                        <p id="title_line">What if I lose my Leap Card?</p>
+                        <p>You can register your Leap Card here to protect against loss or theft. Once you report
+                            your
+                            stolen card within 5 days, you can order a replacement card which will be sent out to
+                            you in
+                            5
+                            working days.</p>
+                        <p id="title_line">Auto Top-up</p>
+                        <p>Auto Top-up allows you to automatically top-up your Leap Card with Travel Credit directly
+                            from
+                            your bank account. It’s simple. Just go online at www.leapcard.ie, activate your card
+                            with
+                            this
+                            function, select the Auto Top-up amount you require and the next time your card reaches
+                            a
+                            €10
+                            balance, Auto Top-up will kick in and you will never run out of travel credit again. And
+                            the
+                            even greater thing is you will upload the Travel Credit when you board the bus.</p>
+
+                        <p class="p-2 rounded mt-4 mb-2 text-primary"
+                            style="background-color: rgba(250, 224, 191, 0.795);"><span class="fw-bold">Note:</span> You
+                            can pay by on Dublin bus using a
+                            <span class="fw-bold">Leap Card</span> or by
+                            paying with cash in <span class="fw-bold">exact coins only</span>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row" id="transport_row">
+            <div class="my-3 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h2>Fare Information</h2>
+                        <p id="title_line">Leap card</p>
+                        <p>If your stop is from stages <span class="fw-bold">1 – 3</span> or from stages <span
+                                class="fw-bold">4 – 13</span> you tell the driver and he will take
+                            deduct the proper amount from your leap card.
+                            Other wise, if your stop is <span class="fw-bold">over 13 stages</span>, is Xpresso or Route
+                            90 or 40e, simply present
+                            your Leap Card to the smart card reader on the right hand side as you enter the bus.
+                        </p>
+                        <p id="title_line">Cash</p>
+                        <p>Please make sure that you have the correct change to pay for your fare. Drivers cannot accept
+                            Euro notes or give change in any form.</p>
+                        <table class="table table-success table-striped table-sm">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Adult</th>
+                                    <th scope="col">Leap</th>
+                                    <th scope="col">Cash</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Stages 1 - 3</th>
+                                    <td>€1.55</td>
+                                    <td>€2.15</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Stages 4 – 13</th>
+                                    <td>€2.25</td>
+                                    <td>€3.00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Over 13 Stages</th>
+                                    <td>€2.50</td>
+                                    <td>€3.30</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Xpresso</th>
+                                    <td>€3.00</td>
+                                    <td>€3.80</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Route 90 & 40e</th>
+                                    <td>€1.55</td>
+                                    <td>€2.15</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="table table-success table-striped table-sm">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Child</th>
+                                    <th scope="col">Leap (U19 yrs)</th>
+                                    <th scope="col">Cash (U16 yrs)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">School Hours (All Stages)*</th>
+                                    <td>€0.80</td>
+                                    <td>€1.00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">All Stages</th>
+                                    <td>€1.00</td>
+                                    <td>€1.30</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Xpresso</th>
+                                    <td>€1.26</td>
+                                    <td>€1.60</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Route 90 & 40e</th>
+                                    <td>€1.00</td>
+                                    <td>€1.30</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <p id="title_line">What is Leap Card fare capping?</p>
+                        <p>The Leap Card system caps the use of Travel Credit, so once you have taken trips using your
+                            Travel Credit that add up to the equivalent of the daily or weekly cap value, you can
+                            continue to travel as normal, but no further Travel Credit will be taken from your card.
+                            When the cap is reached you should continue to touch on as normal to have a valid ticket.
+                        </p>
+                        <table class="table table-success table-striped table-sm">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Daily</th>
+                                    <th scope="col">Weekly</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Adult Cap</th>
+                                    <td>€5.00</td>
+                                    <td>€20.00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Child Cap</th>
+                                    <td>€2.70</td>
+                                    <td>€8.50</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>The weekly cap is measured on a calendar week, starting on Monday and finishing on Sunday.
+                            There is also a multi-operator cap if you are travelling on Dublin Bus, Luas and DART and
+                            Commuter Rail. The daily cap is €10.00 and the weekly cap is €40.00. There is also a
+                            multi-operator cap for children. The daily cap is €3.50 and the weekly cap is €14.00. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="my-3 col-md-6">
+                <div class="card">
+                    <img src="/static/Images/dublin_bikes.png" class="card-img-top rounded" alt="dublin bikes">
+                    <div class="card-body">
+                        <h2>Bike Rental</h2>
+                        <p id="title_line">Dublin Bikes</p>
+                        <p>Dublin bikes city bike rental service which allows people to travel around the city choosing
+                            a bike from their nearest feasible location. This service is mainly available around central
+                            part of Dublin i.e. City centre. The service also provides temporary tickets, perfect for
+                            tourists!</p>
+                        <div class="mb-4">
+                            <img src="/static/Images/db_stops.jpg" id="centred_image" class="img-fluid"
+                                alt="dublin bikes stops on map">
+                        </div>
+                        <p>This is a self-service bike rental system open to everyone from 14 years of age. It enables
+                            you to travel through the city centre, commute between home and work and get out and about
+                            in Dublin.</p>
+                        <p id="title_line">How to rent a Dublin Bike?</p>
+                        <p>The three-day ticket costs €5 and gives you unlimited access to Dublin bikes for 3 days. It’s
+                            ideal for people who are visiting the city.
+                            You can purchase three-day tickets from Dublin Bikes stations that feature a credit card
+                            terminal. A full list of these, and a map, is provide on the Dublin Bikes website <a
+                                href="https://www.dublinpublictransport.ie/bike-rental-dublin" target="_blank">here</a>.
+                            Your three-day ticket is a card containing an ID which you will need to enter each time you
+                            hire a bike (you will also need to select a pin to use with it). You should keep your card
+                            with you at all times when using the bikes.
+                        </p>
+                        <p>The annual card costs €25 per year, and enables you to use the bikes on an unlimited basis
+                            all year round; you can also associate your Leap Card smart ticket with it (allowing you to
+                            use your Leap Card to use the service).
+                            Instructions on how to register for an annual card (and associate it with your Leap Card)
+                            are available on the Dublin Bikes website, <a
+                                href="https://www.dublinpublictransport.ie/bike-rental-dublin" target="_blank">here</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row" id="transport_row">
+            <div class="my-3 col-md-6">
+                <div class="card">
+                    <img src="/static/Images/bleeper.png" class="card-img-top rounded" alt="dublin bikes">
+                    <div class="card-body">
+                        <p id="title_line" class="mt-1">Bleeper</p>
+                        <p><a href="https://www.bleeperactive.com/" target="_blank">Bleeper</a> is an alternative
+                            service to Dublin Bikes. The main difference is that there are no stations. Instead, you
+                            park the bike up using a fixed smart lock. Dublin City Council were none-too-pleased with
+                            this idea fearing a repeat of what this system led to in China. There was a blatant
+                            abandonment of bikes everywhere, with bikes locked to anything and everything imaginable.
+                        </p>
+                        <p>Despite opposition, BleeperBikes launched and simply emphasised the importance of proper bike
+                            parking. This is reinforced by a points system which rewards correct usage of the bikes.</p>
+                        <p id="title_line">How much do BleeperBikes cost?</p>
+                        <p>There’s no annual charge for using BleeperBikes. Instead, you pay by the ride. €5 will get
+                            you 5 rides with a €25 top-up getting you 27 rides. By the way, one ride is up to one hour
+                            of usage.</p>
+                        <p>Download the app <a
+                                href="https://play.google.com/store/apps/details?id=com.gesila.bleeperbike&hl=en_IE&gl=US"
+                                target="_blank">here</a>.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="my-3 col-md-6">
+                <div class="card">
+                    <img src="/static/Images/phoenix_park_bikes.png" class="card-img-top rounded"
+                        alt="phoenix parks bikes">
+                    <div class="card-body">
+                        <p id="title_line">Phoenix Park Bikes</p>
+                        <p>Phoenix Park Bikes, established in August 2015 is now the largest bike rental company in the
+                            Capital City. Exciting stuff! Located at the main entrance to the Phoenix Park Dublin, it
+                            creates the perfect opportunity for you, the visitor to grab a bike on the way into
+                            experiencing this enormous park. Before you head off, grab a free map of the park and
+                            information from the friendly staff on duty.</p>
+                        <p>Find out more <a href="https://www.phoenixparkbikes.com/" target="_blank">here</a>.</p>
+                        <p id="title_line">Road Bike Hire</p>
+                        <p>Road bike hire Dublin provide a high level of road bicycles to hire.
+                            The minimum road bike specification is aluminum frame, carbon fork, Shimano 105 drivetrain.
+                            Some bikes may have disc brakes, some have caliper brakes. Please see full selection of our
+                            bikes <a href="https://roadbikehire.ie/" target="_blank">here</a>, for more detailed
+                            information.
+                            Roadbikehire’s bikes are selected to be comfortable and have gearing that is easy to ride on
+                            hills.
+                        </p>
+                        <p class="mb-0">You may need to rent a road bike for the following reasons:
+                        </p>
+                        <ul>
+                            <li>You may not have room to store a commuter bike and a road bike.</li>
+                            <li>You may only have a commuter bike, and don’t want to commit to buying a road bike.</li>
+                            <li>You may want to try a road bike before you buy it.</li>
+                            <li>It is expensive and a hassle to put your bike on an airplane.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        // document.getElementById("btnsave").addEventListener("click", resetEmotes, false);
+
+        var bus = document.getElementById("TwitterBus");
+        var bike = document.getElementById("TwitterBike");
+        function Twitter_onclick() {
+            console.log("twitter");
+            var popup = document.getElementById("popuptweets");
+
+            var btnTwitterBus = document.getElementById("btnBus");
+            var btnTwitterBike = document.getElementById("btnBikes");
+
+            // popup.style.visibility = "visible";
+            bus.style.display = "block";
+        }
+
+        function btnBus_onclick() {
+            bike.style.display = "none";
+            bus.style.display = "block";
+        }
+        function btnBikes_onclick() {
+            bus.style.display = "none";
+            bike.style.display = "block";
+        }
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+</body>
